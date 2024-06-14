@@ -26,7 +26,7 @@ If you use this repository in your research, please cite it as follows:
 
 title={Publicly Available Dental Image Datasets for Artificial Intelligence},
 
-author={Sergio E. Uribe and Julien Issa and Fatemeh Sohrabniya and Ashleigh Denny and Natalie Nari Kim and Adeyinka F Dayo and Akhilanand Chaurasia and Ahmad Sofi-Mahmudi and Martha Büttner and Falk Schwendicke},
+author={Sergio E. Uribe and Julien Issa and Fatemeh Sohrabniya and Ashleigh Denny and Natalie Nari Kim and Adeyinka F Dayo and Akhilanand Chaurasia and Ahmad Sofi-Mahmudi and Falk Schwendicke},
 
 year={2024},
 
