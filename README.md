@@ -18,6 +18,16 @@ Note: This repository is intended for collaborative editing and review.
 [See protocol](https://osf.io/mf897/)
 
 
+
+<p align="center">
+  <a href="https://github.com/sergiouribe/dental_datasets_itu/blob/main/AI_Dental_Datasets_List.md">
+    <img src="https://img.shields.io/badge/-Access%20the%20List%20of%20Datasets-blue" alt="Access the List of Datasets" style="transform: scale(1.5);">
+  </a>
+</p>
+
+
+
+
 ## Citation
 
 If you use this repository in your research, please cite it as follows:
