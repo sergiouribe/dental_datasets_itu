@@ -59,3 +59,272 @@ This repository serves as a centralized database of datasets for artificial inte
 - **Images and Resolutions**: Panoramic images, multiple resolutions ranging from 2048x989 to 2950x1330
 - **Image Manipulation**: Cropped
 - **Example of File Names**: 1.png, 85.png, etc.
+
+
+### Dental Radiography
+
+- **Database**: Kaggle
+- **Dataset URL**: [Dental Radiography](https://www.kaggle.com/datasets/imtkaggleteam/dental-radiography)
+- **Year**: 2023
+- **Country**: Iran
+- **DOI**: N/A
+- **Source of Data Acquisition**: Dental clinic
+- **Reason for Image Acquisition**: Dental diagnosis, research
+- **Imaging Modality**: Panoramic radiographs
+- **Equipment Detail**: N/A
+- **License Type**: CC BY-SA 4.0
+- **Annotators**: Not specified
+- **Files Formats**: JPEG (.jpg, .jpeg, .jfif, .pjpeg, .pjp)
+- **Images and Resolutions**: Panoramic images, 256x512 px
+- **Image Quality**: Cropped
+- **Image Manipulation**: Cropped
+- **Contains Additional Information**: Yes, an Excel sheet (named: _annotations.csv) with image size and description of each image
+- **Example of File Names**: 0041_jpg.rf.45bc3049f99113cefd018e407df2415f, 0095_jpg.rf.d7773e0afb13f54a3e6244079b483ab2, etc.
+
+### Panoramic-Caries-Segmentation
+
+- **Database**: GitHub
+- **Dataset URL**: [Panoramic-Caries-Segmentation](https://github.com/Zzz512/MLUA)
+- **Year**: 2023
+- **Country**: China
+- **DOI**: 10.1016/j.neucom.2023.03.069
+- **Source of Data Acquisition**: Not described
+- **Reason for Image Acquisition**: Not described
+- **Imaging Modality**: Panoramic radiographs
+- **Equipment Detail**: N/A
+- **License Type**: No License Specified
+- **Annotators**: 5
+- **Annotation Type**: Pixel-level
+- **Files Formats**: PNG
+- **Images and Resolutions**: Panoramic images, 1435x2943
+- **Image Quality**: Raw images
+- **Image Manipulation**: Cropped
+- **Contains Additional Information**: Yes, Readme file
+- **Example of File Names**: 1018.png, 1026.png, etc.
+
+### TK_Tooth_Number_Code
+- **Database**: GitHub
+- **Dataset URL**: [TK_Tooth_Number_Code](https://github.com/tanjidakabir/TK_Tooth_Number_Code)
+- **Year**: 2022
+- **Country**: N/A
+- **DOI**: Not described
+- **Source of Data Acquisition**: Not described
+- **Reason for Image Acquisition**: Not described
+- **Imaging Modality**: Panoramic radiographs
+- **Equipment Detail**: N/A
+- **License Type**: No License Specified
+- **Annotators**: Not specified
+- **Annotation Type**: Label
+- **Files Formats**: PNG
+- **Images and Resolutions**: Cropped Panoramic images, 250x152
+- **Image Quality**: Raw images
+- **Image Manipulation**: Cropped
+- **Contains Additional Information**: Yes, readme file, model description, mask file and several xlsx files to describe the data
+- **Example of File Names**: 109_upper_0.png, 109_lower_0.png, etc.
+
+### CL Detection
+
+- **Database**: Grand-challenge
+- **Dataset URL**: [CL Detection](https://cl-detection2023.grand-challenge.org/)
+- **Year**: 2023
+- **Country**: Taiwan
+- **DOI**: N/A
+- **Source of Data Acquisition**: Dental clinics
+- **Reason for Image Acquisition**: Benchmarking
+- **Imaging Modality**: Cephalometric radiographs
+- **Equipment Detail**: N/A
+- **License Type**: No License Specified
+- **Annotators**: Not specified
+- **Annotation Type**: Pixel-level
+- **Files Formats**: JPEG (.jpg, .jpeg, .jfif, .pjpeg, .pjp)
+- **Images and Resolutions**: Cephalometric, 2048x1555 and 1804x2148
+- **Image Quality**: Raw images
+- **Example of File Names**: N/A
+
+###  Tufts Panoramic Dataset
+
+- **Database**: PubMed
+- **Dataset URL**: [Tufts Panoramic Dataset](https://tdd.ece.tufts.edu/)
+- **Year**: 2021
+- **Country**: USA
+- **DOI**: 10.1109/JBHI.2021.3117575
+- **Source of Data Acquisition**: University Dental School Clinic
+- **Reason for Image Acquisition**: Diagnostic Investigation
+- **Imaging Modality**: Panoramic radiographs
+- **Equipment Detail**: OP100 Orthopantomograph (Instrumentarium Imaging/Kavo Kerr) and Plammeca Promax 2D
+- **License Type**: No License Specified
+- **Annotators**: 2
+- **Annotation Type**: Label
+- **Files Formats**: JPEG (.jpg, .jpeg, .jfif, .pjpeg, .pjp)
+- **Images and Resolutions**: Panoramic images, 840x1615
+- **Example of File Names**: 1.JPG, 2.JPG, etc.
+
+
+###  3DTeethSeg22_challenge ToothFairy or Teeth3DS
+
+- **Database**: OSF
+- **Dataset URL**: [3DTeethSeg22_challenge ToothFairy or Teeth3DS](https://osf.io/xctdy/)
+- **Year**: 2022
+- **Country**: France, Belgium
+- **DOI**: 10.48550/arXiv.2210.06094
+- **Source of Data Acquisition**: Dental clinics
+- **Reason for Image Acquisition**: Dental diagnosis
+- **Imaging Modality**: Intra-oral 3D scans
+- **Equipment Detail**: Primescan, Trios3, iTero Element 2 Plus
+- **License Type**: CC BY-NC-ND 4.0
+- **Annotators**: 50
+- **Annotation Type**: Pixel-level
+- **Annotation Software**: Custom tool mentioned
+- **Files Formats**: DICOM (.dcm)
+- **Images and Resolutions**: DICOM standard, raw images
+- **Contains Additional Information**: Yes, Annotations included
+- **Example of File Names**: *.dcm
+
+### v7labs Panoramic Dental
+
+- **Database**: Google Datasets
+- **Dataset URL**: [v7labs Panoramic Dental](https://www.v7labs.com/open-datasets/panoramic-dental)
+- **Year**: 2023
+- **Country**: USA
+- **DOI**: N/A
+- **Source of Data Acquisition**: Dental clinics
+- **Reason for Image Acquisition**: Dental diagnosis, research
+- **Imaging Modality**: Panoramic radiographs
+- **Equipment Detail**: N/A
+- **License Type**: No License Specified
+- **Annotators**: No
+- **Annotation Type**: Pixel-level
+- **Files Formats**: PNG
+- **Images and Resolutions**: Panoramic images, 1250 x 3122 px
+- **Image Quality**: Raw images
+- **Example of File Names**: 93.png, 85.png, etc.
+
+###  tooth-marked-tongue
+
+- **Database**: Kaggle
+- **Dataset URL**: [tooth-marked-tongue](https://www.kaggle.com/datasets/clearhanhui/biyesheji)
+- **Year**: 2022
+- **Country**: China
+- **DOI**: 10.3390/diagnostics12102451
+- **Source of Data Acquisition**: Schools
+- **Reason for Image Acquisition**: Dental diagnosis
+- **Imaging Modality**: Intraoral photograph
+- **Equipment Detail**: Canon Eos 700d
+- **License Type**: No License Specified
+- **Annotators**: 5
+- **Annotation Type**: Label
+- **Annotation Software**: Labelme, Labelimg
+- **Files Formats**: PNG
+- **Images and Resolutions**: Photos, 861x755 (Height 861 px, Width: 755 px)
+- **Image Quality**: Raw images
+- **Example of File Names**: 140826072926_st.png, etc.
+
+### Oral Cancer (Lips and Tongue) images
+
+- **Database**: Kaggle
+- **Dataset URL**: [Oral Cancer (Lips and Tongue) images](https://www.kaggle.com/datasets/shivam17299/oral-cancer-lips-and-tongue-images/data)
+- **Year**: 2022
+- **Country**: India
+- **DOI**: N/A
+- **Source of Data Acquisition**: Hospitals
+- **Reason for Image Acquisition**: Diagnostic for oral diseases
+- **Imaging Modality**: Intraoral photograph
+- **Equipment Detail**: N/A
+- **License Type**: Copyright the Authors
+- **Annotators**: Not specified
+- **Annotation Type**: Label
+- **Files Formats**: JPEG (.jpg, .jpeg, .jfif, .pjpeg, .pjp)
+- **Images and Resolutions**: Photos, 825 x 1100 px
+- **Image Quality**: Raw images
+- **Example of File Names**: 324950_1100.jpg, IMG_3506-e1564923599677.jpg, etc.
+
+### Pulp Exposure
+
+- **Database**: PubMed
+- **Dataset URL**: [Pulp Exposure](https://doi.org/10.6084/m9.figshare.23930368.v1)
+- **Year**: 2023
+- **Country**: Saudi Arabia, Spain, Korea
+- **DOI**: 10.1186/s12903-023-03251-0
+- **Source of Data Acquisition**: Dental clinics, University Dental School Clinic
+- **Reason for Image Acquisition**: Not described
+- **Imaging Modality**: Intraoral radiographs
+- **Equipment Detail**: N/A
+- **License Type**: No License Specified
+- **Annotators**: 10
+- **Annotation Type**: Box
+- **Files Formats**: JPEG (.jpg, .jpeg, .jfif, .pjpeg, .pjp)
+- **Images and Resolutions**: Periapical, 1402 x 1876
+- **Image Quality**: Raw images
+- **Example of File Names**: Test Dataset 22.jpg, Test Dataset 17.jpg etc...
+
+###  Panoramic-Paraguay
+
+- **Database**: Zenodo
+- **Dataset URL**: [Panoramic-Paraguay](https://zenodo.org/records/4457648)
+- **Year**: 2021
+- **Country**: Paraguay
+- **DOI**: 10.3390/s21093110
+- **Source of Data Acquisition**: University Dental School Clinic
+- **Reason for Image Acquisition**: Not described
+- **Imaging Modality**: Panoramic radiographs
+- **Equipment Detail**: N/A
+- **License Type**: No License Specified
+- **Annotators**: 60
+- **Annotation Type**: N/A
+- **Files Formats**: JPEG (.jpg, .jpeg, .jfif, .pjpeg, .pjp)
+- **Images and Resolutions**: Panoramic images, 1024 x 2041 px
+- **Image Quality**: Raw images
+- **Example of File Names**: 104.jpg, 133.jpg, etc...
+
+
+### Panoramic Dental Xray Dataset
+
+- **Database**: Mendeley
+- **Dataset URL**: [Panoramic Dental Xray Dataset](https://data.mendeley.com/datasets/73n3kz2k4k/2)
+- **Year**: 2023
+- **Country**: Tunisia
+- **DOI**: 10.1007/s11042-023-17568-z
+- **Source of Data Acquisition**: Dental clinics
+- **Reason for Image Acquisition**: Dental diagnosis, research
+- **Imaging Modality**: Panoramic radiographs
+- **Equipment Detail**: N/A
+- **License Type**: CC BY 4.0
+- **Annotators**: 2
+- **Annotation Type**: Pixel-level
+- **Annotation Software**: VGG Image Annotator
+- **Files Formats**: JPEG (.jpg, .jpeg, .jfif, .pjpeg, .pjp)
+- **Images and Resolutions**: Panoramic images, 1464 x 2964 px
+- **Image Quality**: Raw images
+- **Example of File Names**: 18.jpg, 22.jpg, etc..
+
+###  PhysioNet Multimodal
+
+- **Database**: Google Datasets
+- **Dataset URL**: [PhysioNet Multimodal Dental Dataset](https://physionet.org/content/multimodal-dental-dataset/1.0.0/)
+- **Year**: 2022
+- **Country**: China
+- **DOI**: 10.13026/s5z3-2766
+- **Source of Data Acquisition**: Dental clinics
+- **Reason for Image Acquisition**: Dental diagnosis, research
+- **Imaging Modality**: Cone Beam Computed Tomography (CBCT), Panoramic radiographs
+- **Equipment Detail**: PhysioNet
+- **License Type**: PhysioNet Restricted Health Data License 1.5.0
+- **Annotators**: 56
+- **Annotation Type**: Box
+- **Annotation Software**: 13
+- **Files Formats**: DICOM (.dcm)
+- **Images and Resolutions**: DICOM standard, raw images
+- **Contains Additional Information**: Yes, LICENSE.txt and excel files
+- **Example of File Names**: Folder name: 0006_0, 0008_0, etc.. Slices: Slice_0000.dcm, Slice_0001.dcm, etc..
+
+
+
+
+
+
+
+
+
+
+
+
