@@ -1,6 +1,6 @@
 # Dental Group AI4H ITU/WIPO/WHO Global Initiative Review Results
 
-This repository contains an editable version of the review results by the Dental Group AI4H ITU/WIPO/WHO Global Initiative. The review focused on the application of artificial intelligence in dentistry, and the results include a comprehensive analysis of the current state of the field, as well as recommendations for future research and development.
+This repository contains an editable version of the results of the ITU/WHO Global Initiative Dental Group's review of public datasets for dental imaging AI.
 
 
 
