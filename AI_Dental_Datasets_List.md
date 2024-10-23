@@ -25,6 +25,7 @@ This repository serves as a centralized database of datasets for artificial inte
  | PhysioNet Multimodal                    | Google Datasets  | [PhysioNet Multimodal Dental Dataset](PhysioNet Multimodal Dental Dataset) | 2022 | China        | 10.13026/s5z3-2766                         | Dental clinics                  | Dental diagnosis, research               | Cone Beam Computed Tomography (CBCT), Panoramic radiographs | PhysioNet                                          | PhysioNet Restricted Health Data License 1.5.0 | 56            | Box                 | DICOM (.dcm)                 | DICOM standard, raw images                              | Folder name: 0006_0, 0008_0, etc.. Slices: Slice_0000.dcm, Slice_0001.dcm, etc.. |   |
  | A dual-labeled dataset for automatic teeth segmentation, numbering, and state assessment | Kaggle | [A dual-labeled dataset](A dual-labeled dataset) | 2023 | Unknown     | N/A                                         | Dental clinics                  | Dental diagnosis, research                | Panoramic radiographs                      | N/A                                       | Unknown                 | Yes          | Label               | PNG                          | Panoramic images, varying file sizes from 374 KB to 3.44 MB | 2005.png, 2006.png, etc.                           |
  | ORCHID: Oral Cancer Histology Image Database | medRxiv          | [ORCHID](ORCHID)                                | 2024 | India        | 10.1038/s41597-024-03836-6                   | Hospitals, Research Institutes   | Oral cancer and precancer diagnosis       | Histopathology                     | Bright field microscopy (1000X effective magnification) | Unknown                 | Yes          | Patch-level         | PNG                          | 300x300 pixel patches from 100X objective images   | ORCHID_InstituteID_SampleID_ImageID_PatchID.png      |
+ | Vident-real: An Intra-Oral Video Dataset for Multi-Task Learning | Gdańsk University of Technology | [Vident-real.zip](http://Vident-real.zip) | 2024 | Poland   | [10.34808/vjnh-9c35](http://10.34808/vjnh-9c35) | Medical University of Gdańsk | Conservative dental treatments | Intra-oral video recordings | Tiny micro-camera attached to dental handpieces | CC BY-NC 4.0 | N/A | Pseudo-labels (enhanced frame, segmented teeth, homography between frames) | JPEG (debayerized from RAW 10-bit images) | 800x800 pixels, 70,000 frames across 100 video sequences | vid001_frame001.jpg, vid002_frame001.jpg, etc. || 
 
 
 ## LIST
@@ -386,7 +387,29 @@ This repository serves as a centralized database of datasets for artificial inte
   - Includes sub-classifications for OSCC into well-differentiated (WD), moderately-differentiated (MD), and poorly-differentiated (PD) categories.
   - Stain normalization applied using the Reinhard method.
 
+### Vident-real: An Intra-Oral Video Dataset for Multi-Task Learning
 
+- **Database:** Gdańsk University of Technology
+- **Dataset URL:** [Vident-real.zip](http://Vident-real.zip)
+- **Year:** 2024
+- **Country:** Poland
+- **DOI:** [10.34808/vjnh-9c35](http://10.34808/vjnh-9c35)
+- **Source of Data Acquisition:** Medical University of Gdańsk
+- **Reason for Image Acquisition:** Conservative dental treatments
+- **Imaging Modality:** Intra-oral video recordings
+- **Equipment Detail:** Tiny micro-camera attached to dental handpieces
+- **License Type:** [CC BY-NC 4.0](http://creativecommons.org/licenses/by-nc/4.0/)
+- **Annotators:** N/A
+- **Annotation Type:** Pseudo-labels (enhanced frame, segmented teeth, homography between frames)
+- **Files Formats:** JPEG (debayerized from RAW 10-bit images)
+- **Images and Resolutions:**
+  - Resolution: 800x800 pixels
+  - Total frames: 70,000
+  - Video sequences: 100
+- **Example of File Names:**
+  - vid001_frame001.jpg
+  - vid002_frame001.jpg
+  - ...
 
 
 
