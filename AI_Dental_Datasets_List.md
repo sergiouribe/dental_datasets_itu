@@ -25,10 +25,53 @@ This repository serves as a centralized database of datasets for artificial inte
  | PhysioNet Multimodal                    | Google Datasets  | [PhysioNet Multimodal Dental Dataset](PhysioNet Multimodal Dental Dataset) | 2022 | China        | 10.13026/s5z3-2766                         | Dental clinics                  | Dental diagnosis, research               | Cone Beam Computed Tomography (CBCT), Panoramic radiographs | PhysioNet                                          | PhysioNet Restricted Health Data License 1.5.0 | 56            | Box                 | DICOM (.dcm)                 | DICOM standard, raw images                              | Folder name: 0006_0, 0008_0, etc.. Slices: Slice_0000.dcm, Slice_0001.dcm, etc.. |   |
  | A dual-labeled dataset for automatic teeth segmentation, numbering, and state assessment | Kaggle | [A dual-labeled dataset](A dual-labeled dataset) | 2023 | Unknown     | N/A                                         | Dental clinics                  | Dental diagnosis, research                | Panoramic radiographs                      | N/A                                       | Unknown                 | Yes          | Label               | PNG                          | Panoramic images, varying file sizes from 374 KB to 3.44 MB | 2005.png, 2006.png, etc.                           |
  | ORCHID: Oral Cancer Histology Image Database | medRxiv          | [ORCHID](ORCHID)                                | 2024 | India        | 10.1038/s41597-024-03836-6                   | Hospitals, Research Institutes   | Oral cancer and precancer diagnosis       | Histopathology                     | Bright field microscopy (1000X effective magnification) | Unknown                 | Yes          | Patch-level         | PNG                          | 300x300 pixel patches from 100X objective images   | ORCHID_InstituteID_SampleID_ImageID_PatchID.png      |
- | Vident-real: An Intra-Oral Video Dataset for Multi-Task Learning | Gdańsk University of Technology | [Vident-real.zip](http://Vident-real.zip) | 2024 | Poland   | [10.34808/vjnh-9c35](http://10.34808/vjnh-9c35) | Medical University of Gdańsk | Conservative dental treatments | Intra-oral video recordings | Tiny micro-camera attached to dental handpieces | CC BY-NC 4.0 | N/A | Pseudo-labels (enhanced frame, segmented teeth, homography between frames) | JPEG (debayerized from RAW 10-bit images) | 800x800 pixels, 70,000 frames across 100 video sequences | vid001_frame001.jpg, vid002_frame001.jpg, etc. || 
+ | Vident-real: An Intra-Oral Video Dataset for Multi-Task Learning | Gdańsk University of Technology | [Vident-real.zip](http://Vident-real.zip) | 2024 | Poland   | [10.34808/vjnh-9c35](http://10.34808/vjnh-9c35) | Medical University of Gdańsk | Conservative dental treatments | Intra-oral video recordings | Tiny micro-camera attached to dental handpieces | CC BY-NC 4.0 | N/A | Pseudo-labels (enhanced frame, segmented teeth, homography between frames) | JPEG (debayerized from RAW 10-bit images) | 800x800 pixels, 70,000 frames across 100 video sequences | vid001_frame001.jpg, vid002_frame001.jpg, etc. | 
+ | Multimodal Dental Dataset               | PhysioNet        | [Dataset Link](https://doi.org/10.13026/h1tt-fc69) | 2024 | China        | [10.13026/h1tt-fc69](https://doi.org/10.13026/h1tt-fc69) | Guilin Medical University      | Collection of imaging data for machine learning and clinical research | CBCT, Panoramic Radiographs, Periapical Radiographs | Smart3D-X CBCT machine, 2D flat panel detector for panoramic imaging, Portable intraoral X-ray generator | Open Access (Creative Commons Attribution-NonCommercial-NoDerivatives 4.0) | Multiple annotators (13 labeled images) | Tooth annotation | DICOM for CBCT and Panoramic, TIF for Periapical | 329 CBCT images, 8 Panoramic, 16,203 Periapical images | e.g., '0006_0' for patient 0006's first visit         |
+| Orthopantomogram teeth segmentation and numbering dataset | Zenodo           | [Dataset Link](https://zenodo.org/records/10538750?token=eyJhbGciOiJIUzUxMiJ9...) | 2024 | Pakistan     | 10.5281/zenodo.10538750                   | Aga Khan University Hospital    | Developing AI models for dental diagnostics | Orthopantomogram (OPG)             | Orthophos XG 3-D (Dentsply Sirona GmbH) operated at 60–90 kV and 3–16 mA | Creative Commons License    | Specialist dentists | Instance segmentation | JSON format for annotations; PNG for images | 250 images of permanent dentition, 2440 × 1292 pixels | OPG_001.png, OPG_002.png, ... |
+
+
+
+
 
 
 ## LIST
+
+
+### Orthopantomogram Teeth Segmentation and Numbering Dataset
+
+- **Database**: Zenodo
+ **Dataset URL**: [Orthopantomogram Teeth Segmentation](https://zenodo.org/records/10538750?token=eyJhbGciOiJIUzUxMiJ9eyJpZCI6ImYxOGQ2N2Q5LWUyOTktNGE1Zi1iNTljLTNkYzkzNzM2NGU5OSIsImRhdGEiOnt9LCJyYW5kb20iOiJhYjBjYTEyZmIwZDdhNThlYTIxODVhMmVlM2I0ZTk5MyJ9.Q2qqd4WSorIY4YXQPU3Re-RSpc3r1D6oGGdJQc72ne8yOigSzsD8oG8W-ojPK1btsMNhiNf5tAVEnV6Rwo469g)
+- **Year**: 2024
+- **Country**: Pakistan
+- **DOI**: 10.5281/zenodo.10538750
+- **Source of Data Acquisition**: Dental clinics at Aga Khan University Hospital
+- **Reason for Image Acquisition**: Dental diagnosis and AI research
+- **Imaging Modality**: Orthopantomograms (OPGs)
+- **Equipment Detail**: Orthophos XG 3-D (Dentsply Sirona GmbH, Germany)
+- **License Type**: Creative Commons License (Open Access)
+- **Annotators**: Specialist dentists trained in annotation
+- **Annotation Type**: Instance Segmentation
+- **Files Formats**: PNG
+- **Images and Resolutions**: 250 OPGs, resolution of 2440 × 1292 pixels
+- **Example of File Names**: not specified in the document
+
+### Multimodal Dental Dataset
+
+- **Database**: PhysioNet
+- **Dataset URL**: [Multimodal Dental Dataset](https://doi.org/10.13026/h1tt-fc69)
+- **Year**: 2024
+- **Country**: China
+- **DOI**: 10.1038/s41597-024-04130-1
+- **Source of Data Acquisition**: Dental hospitals
+- **Reason for Image Acquisition**: Oral disease diagnosis and treatment planning
+- **Imaging Modality**: Cone Beam Computed Tomography (CBCT), panoramic radiographs, and periapical radiographs
+- **Equipment Detail**: Smart3D-X (Beijing Langshi Instrument Co., Ltd., China)
+- **License Type**: Open Access under Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License
+- **Annotators**: Multiple trained technicians
+- **Annotation Type**: Image segmentation and labeling
+- **File Formats**: DICOM and PNG
+- **Images and Resolutions**: 329 CBCT images, 1 panoramic image (1468x2904 resolution), 16,203 periapical radiographs with various resolutions
+- **Example of File Names**: 0006_0.dcm, 0006_1.png, PeX-ray_0001_1.tif
 
 ### DENTEX Panoramic Dataset
 
