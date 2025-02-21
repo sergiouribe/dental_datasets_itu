@@ -27,7 +27,8 @@ This repository serves as a centralized database of datasets for artificial inte
  | ORCHID: Oral Cancer Histology Image Database | medRxiv          | [ORCHID](ORCHID)                                | 2024 | India        | 10.1038/s41597-024-03836-6                   | Hospitals, Research Institutes   | Oral cancer and precancer diagnosis       | Histopathology                     | Bright field microscopy (1000X effective magnification) | Unknown                 | Yes          | Patch-level         | PNG                          | 300x300 pixel patches from 100X objective images   | ORCHID_InstituteID_SampleID_ImageID_PatchID.png      |
  | Vident-real: An Intra-Oral Video Dataset for Multi-Task Learning | Gdańsk University of Technology | [Vident-real.zip](http://Vident-real.zip) | 2024 | Poland   | [10.34808/vjnh-9c35](http://10.34808/vjnh-9c35) | Medical University of Gdańsk | Conservative dental treatments | Intra-oral video recordings | Tiny micro-camera attached to dental handpieces | CC BY-NC 4.0 | N/A | Pseudo-labels (enhanced frame, segmented teeth, homography between frames) | JPEG (debayerized from RAW 10-bit images) | 800x800 pixels, 70,000 frames across 100 video sequences | vid001_frame001.jpg, vid002_frame001.jpg, etc. | 
  | Multimodal Dental Dataset               | PhysioNet        | [Dataset Link](https://doi.org/10.13026/h1tt-fc69) | 2024 | China        | [10.13026/h1tt-fc69](https://doi.org/10.13026/h1tt-fc69) | Guilin Medical University      | Collection of imaging data for machine learning and clinical research | CBCT, Panoramic Radiographs, Periapical Radiographs | Smart3D-X CBCT machine, 2D flat panel detector for panoramic imaging, Portable intraoral X-ray generator | Open Access (Creative Commons Attribution-NonCommercial-NoDerivatives 4.0) | Multiple annotators (13 labeled images) | Tooth annotation | DICOM for CBCT and Panoramic, TIF for Periapical | 329 CBCT images, 8 Panoramic, 16,203 Periapical images | e.g., '0006_0' for patient 0006's first visit         |
-| Orthopantomogram teeth segmentation and numbering dataset | Zenodo           | [Dataset Link](https://zenodo.org/records/10538750?token=eyJhbGciOiJIUzUxMiJ9...) | 2024 | Pakistan     | 10.5281/zenodo.10538750                   | Aga Khan University Hospital    | Developing AI models for dental diagnostics | Orthopantomogram (OPG)             | Orthophos XG 3-D (Dentsply Sirona GmbH) operated at 60–90 kV and 3–16 mA | Creative Commons License    | Specialist dentists | Instance segmentation | JSON format for annotations; PNG for images | 250 images of permanent dentition, 2440 × 1292 pixels | OPG_001.png, OPG_002.png, ... |
+ | ACTA-DIRECT Dataset | ACTA-DIRECT Dataset | [ACTA-DIRECT Dataset](https://publication.yoda.vu.nl/full/VU01/WK8SQN.html) | 2024 | Netherlands | 10.48338/VU01-UAAHEY | Extracted dental samples | Diagnostic insights for radiographic early-caries with micro-CT | Micro-CT scans and conventional radiographs |  | Open - freely retrievable | Three different experts for conventional annotations | Initial proximal caries lesion annotations |  | 179 extracted molar and premolar teeth | 
+| Orthopantomogram teeth segmentation and numbering dataset | Zenodo           | [Dataset Link](https://zenodo.org/records/10538750?token=eyJhbGciOiJIUzUxMiJ9...) | 2024 | Pakistan     | 10.5281/zenodo.10538750                   | Aga Khan University Hospital    | Developing AI models for dental diagnostics | Orthopantomogram (OPG)             | Orthophos XG 3-D (Dentsply Sirona GmbH) operated at 60–90 kV and 3–16 mA | Creative Commons License    | Specialist dentists | Instance segmentation | JSON format for annotations; PNG for images | 250 images of permanent dentition, 2440 × 1292 pixels | OPG_001.png, OPG_002.png, ... |  
 
 
 
@@ -35,6 +36,23 @@ This repository serves as a centralized database of datasets for artificial inte
 
 
 ## LIST
+
+###  **ACTA-DIRECT Dataset**  
+**Database:**  ACTA-DIRECT Dataset
+**Dataset URL:**  https://publication.yoda.vu.nl/full/VU01/WK8SQN.html
+**Year:** 2024  
+**Country:**  Netherlands
+**DOI:**  10.48338/VU01-UAAHEY
+**Source of Data Acquisition:** Extracted dental samples  
+**Reason for Image Acquisition:** Diagnostic insights for radiographic early-caries with micro-CT  
+**Imaging Modality:** Micro-CT scans and conventional radiographs  
+**Equipment Detail:**  
+**License Type:** Open - freely retrievable  
+**Annotators:** Three different experts for conventional annotations  
+**Annotation Type:** Initial proximal caries lesion annotations  
+**Files Formats:**  
+**Images and Resolutions:** 179 extracted molar and premolar teeth  
+**Example of File Names:**  
 
 
 ### Orthopantomogram Teeth Segmentation and Numbering Dataset
