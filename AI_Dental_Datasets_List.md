@@ -38,21 +38,21 @@ This repository serves as a centralized database of datasets for artificial inte
 ## LIST
 
 ###  **ACTA-DIRECT Dataset**  
-**Database:**  ACTA-DIRECT Dataset
-**Dataset URL:**  https://publication.yoda.vu.nl/full/VU01/WK8SQN.html
-**Year:** 2024  
-**Country:**  Netherlands
-**DOI:**  10.48338/VU01-UAAHEY
-**Source of Data Acquisition:** Extracted dental samples  
-**Reason for Image Acquisition:** Diagnostic insights for radiographic early-caries with micro-CT  
-**Imaging Modality:** Micro-CT scans and conventional radiographs  
-**Equipment Detail:**  
-**License Type:** Open - freely retrievable  
-**Annotators:** Three different experts for conventional annotations  
-**Annotation Type:** Initial proximal caries lesion annotations  
-**Files Formats:**  
-**Images and Resolutions:** 179 extracted molar and premolar teeth  
-**Example of File Names:**  
+- **Database:**  ACTA-DIRECT Dataset
+- **Dataset URL:**  https://publication.yoda.vu.nl/full/VU01/WK8SQN.html
+- **Year:** 2024  
+- **Country:**  Netherlands
+- **DOI:**  10.48338/VU01-UAAHEY
+- **Source of Data Acquisition:** Extracted dental samples  
+- **Reason for Image Acquisition:** Diagnostic insights for radiographic early-caries with micro-CT  
+- **Imaging Modality:** Micro-CT scans and conventional radiographs  
+- **Equipment Detail:**  
+- **License Type:** Open - freely retrievable  
+- **Annotators:** Three different experts for conventional annotations  
+- **Annotation Type:** Initial proximal caries lesion annotations  
+- **Files Formats:**  
+- **Images and Resolutions:** 179 extracted molar and premolar teeth  
+- **Example of File Names:**  
 
 
 ### Orthopantomogram Teeth Segmentation and Numbering Dataset
