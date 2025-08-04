@@ -40,7 +40,7 @@ author={Sergio E. Uribe and Julien Issa and Fatemeh Sohrabniya and Falk Schwendi
 
 year={2024},
 
-url={https://github.com/sergiouribe/dental_datasets_itu}
+url={https://github.com/sergiouribe/dental_datasets_itu }
 
 }
 
