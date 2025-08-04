@@ -29,6 +29,7 @@ This repository serves as a centralized database of datasets for artificial inte
  | Multimodal Dental Dataset               | PhysioNet        | [Dataset Link](https://doi.org/10.13026/h1tt-fc69) | 2024 | China        | [10.13026/h1tt-fc69](https://doi.org/10.13026/h1tt-fc69) | Guilin Medical University      | Collection of imaging data for machine learning and clinical research | CBCT, Panoramic Radiographs, Periapical Radiographs | Smart3D-X CBCT machine, 2D flat panel detector for panoramic imaging, Portable intraoral X-ray generator | Open Access (Creative Commons Attribution-NonCommercial-NoDerivatives 4.0) | Multiple annotators (13 labeled images) | Tooth annotation | DICOM for CBCT and Panoramic, TIF for Periapical | 329 CBCT images, 8 Panoramic, 16,203 Periapical images | e.g., '0006_0' for patient 0006's first visit         |
  | ACTA-DIRECT Dataset | ACTA-DIRECT Dataset | [ACTA-DIRECT Dataset](https://publication.yoda.vu.nl/full/VU01/WK8SQN.html) | 2024 | Netherlands | 10.48338/VU01-UAAHEY | Extracted dental samples | Diagnostic insights for radiographic early-caries with micro-CT | Micro-CT scans and conventional radiographs |  | Open - freely retrievable | Three different experts for conventional annotations | Initial proximal caries lesion annotations |  | 179 extracted molar and premolar teeth | 
 | Orthopantomogram teeth segmentation and numbering dataset | Zenodo           | [Dataset Link](https://zenodo.org/records/10538750?token=eyJhbGciOiJIUzUxMiJ9...) | 2024 | Pakistan     | 10.5281/zenodo.10538750                   | Aga Khan University Hospital    | Developing AI models for dental diagnostics | Orthopantomogram (OPG)             | Orthophos XG 3-D (Dentsply Sirona GmbH) operated at 60–90 kV and 3–16 mA | Creative Commons License    | Specialist dentists | Instance segmentation | JSON format for annotations; PNG for images | 250 images of permanent dentition, 2440 × 1292 pixels | OPG_001.png, OPG_002.png, ... |  
+| AlphaDent Dataset | GitHub | [AlphaDent GitHub Repository](https://github.com/ZFTurbo/AlphaDent) | 2025 | Russia | N/A | Sechenov University, AlphaChip LLC, HSE University | Detection and segmentation of dental pathologies | Intraoral DSLR photography | Canon 6D Mark II with Canon 100mm f/2.8L macro IS USM lens | Open License (not specified) | 1 (dentist) | Instance segmentation | JPEG (.jpg), PNG (.png), TXT (.txt) | ~1320 images (>5000x3000 px); 295 patients | p001_F_32_001.jpg, 01_class_5.png, p001_F_32_001.txt |
 
 
 
@@ -36,6 +37,35 @@ This repository serves as a centralized database of datasets for artificial inte
 
 
 ## LIST
+
+### **AlphaDent Dataset**  
+- **Database:** GitHub  
+- **Dataset URL:** https://github.com/ZFTurbo/AlphaDent  
+- **Year:** 2025  
+- **Country:** Russia  
+- **DOI:** Not registered (referenced in Sosnin et al., 2025)  
+- **Source of Data Acquisition:** Sechenov University, AlphaChip LLC, HSE University  
+- **Reason for Image Acquisition:** Detection and segmentation of dental pathologies using AI  
+- **Imaging Modality:** Intraoral DSLR photography  
+- **Equipment Detail:** Canon 6D Mark II with Canon 100mm f/2.8L macro IS USM lens  
+- **License Type:** Open License (not further specified)  
+- **Annotators:** One main annotator (dentist); masks created with CVAT  
+- **Annotation Type:** Instance segmentation for 9 classes  
+- **Files Formats:** JPEG (.jpg), PNG (.png), TXT (.txt)  
+- **Images and Resolutions:**  
+  - 1320 high-resolution images (>5000x3000 px)  
+  - 295 patients (273 train, 22 validation)  
+  - 135 test images (withheld labels for leaderboard use)  
+- **Example of File Names:**  
+  - `p001_F_32_001.jpg` (image)  
+  - `00_class_2.png` (mask)  
+  - `p001_F_32_001.txt` (annotations)  
+- **Additional Notes:**  
+  - Class types include abrasion, fillings, crowns, and 6 caries classes  
+  - Leaderboard hosted on [Kaggle](https://www.kaggle.com/competitions/alpha-dent)  
+  - Includes YOLOv8-ready `yolo_seg_train.yaml` file  
+  - Ethical approval from Sechenov University (Protocol No. 02-24, 29 Jan 2024)
+    
 
 ###  **ACTA-DIRECT Dataset**  
 - **Database:**  ACTA-DIRECT Dataset
