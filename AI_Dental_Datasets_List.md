@@ -30,6 +30,7 @@ This repository serves as a centralized database of datasets for artificial inte
  | ACTA-DIRECT Dataset | ACTA-DIRECT Dataset | [ACTA-DIRECT Dataset](https://publication.yoda.vu.nl/full/VU01/WK8SQN.html) | 2024 | Netherlands | 10.48338/VU01-UAAHEY | Extracted dental samples | Diagnostic insights for radiographic early-caries with micro-CT | Micro-CT scans and conventional radiographs |  | Open - freely retrievable | Three different experts for conventional annotations | Initial proximal caries lesion annotations |  | 179 extracted molar and premolar teeth | 
 | Orthopantomogram teeth segmentation and numbering dataset | Zenodo           | [Dataset Link](https://zenodo.org/records/10538750?token=eyJhbGciOiJIUzUxMiJ9...) | 2024 | Pakistan     | 10.5281/zenodo.10538750                   | Aga Khan University Hospital    | Developing AI models for dental diagnostics | Orthopantomogram (OPG)             | Orthophos XG 3-D (Dentsply Sirona GmbH) operated at 60–90 kV and 3–16 mA | Creative Commons License    | Specialist dentists | Instance segmentation | JSON format for annotations; PNG for images | 250 images of permanent dentition, 2440 × 1292 pixels | OPG_001.png, OPG_002.png, ... |  
 | AlphaDent Dataset | GitHub | [AlphaDent GitHub Repository](https://github.com/ZFTurbo/AlphaDent) | 2025 | Russia | N/A | Sechenov University, AlphaChip LLC, HSE University | Detection and segmentation of dental pathologies | Intraoral DSLR photography | Canon 6D Mark II with Canon 100mm f/2.8L macro IS USM lens | Open License (not specified) | 1 (dentist) | Instance segmentation | JPEG (.jpg), PNG (.png), TXT (.txt) | ~1320 images (>5000x3000 px); 295 patients | p001_F_32_001.jpg, 01_class_5.png, p001_F_32_001.txt |
+| Gingivitis Image Captioning Dataset | Mendeley | [Gingivitis Image Captioning Dataset](https://data.mendeley.com/datasets/3253gj88rr/1) | 2024 | Vietnam | 10.17632/3253gj88rr.1 | Hanoi Medical University | Gingivitis diagnosis, image captioning research | Intraoral photograph | Nikon D810 with Nikon AF-S 105mm F/1.4EED Nano lens, Godox MF12 Macro Flash | CC BY 4.0 | 3 (periodontists with >10 years experience) | Label (MGI scores) and captions | JPEG (.jpg), CSV, TXT | 1,096 high-resolution intraoral images of 12 anterior teeth | 00945.jpg, 00945.txt |
 
 
 
@@ -502,8 +503,35 @@ This repository serves as a centralized database of datasets for artificial inte
   - vid002_frame001.jpg
   - ...
 
+### Gingivitis Image Captioning Dataset
 
-
-
-
-
+- **Database:** Mendeley
+- **Dataset URL:** [Gingivitis Image Captioning Dataset](https://data.mendeley.com/datasets/3253gj88rr/1)
+- **Year:** 2024
+- **Country:** Vietnam
+- **DOI:** 10.17632/3253gj88rr.1
+- **Associated Publication DOI:** 10.1016/j.dib.2024.110960
+- **Source of Data Acquisition:** High-quality Dental Treatment Centre, Hanoi Medical University
+- **Reason for Image Acquisition:** Gingivitis diagnosis, image captioning research
+- **Imaging Modality:** Intraoral photograph
+- **Equipment Detail:** Nikon D810 with Nikon AF-S 105mm F/1.4EED Nano lens; Godox MF12 Macro Flash at 90-degree angle
+- **License Type:** CC BY 4.0
+- **Annotators:** 3 periodontists with over 10 years of experience
+- **Annotation Type:** Label (Modified Gingival Index scores per tooth) and captions (3 descriptive captions per image)
+- **Files Formats:** JPEG (.jpg), TXT (.txt), CSV
+- **Images and Resolutions:**
+  - 1,096 high-resolution intraoral images
+  - Each image covers 12 anterior teeth (6 maxillary, 6 mandibular) and surrounding gingival tissue
+  - Dataset size: 6.1 GB
+  - Structured into training, validation, and testing subsets
+- **Example of File Names:**
+  - `00945.jpg` (image)
+  - `00945.txt` (label file)
+  - Captions stored as CSV files
+- **Additional Notes:**
+  - Labels use MGI codes: 1 = Maxillary ROI, 2 = Mandibular ROI, 3-6 = MGI0 to MGI4
+  - High inter-rater reliability achieved through calibration process
+  - Teeth cleaned and dried before photography; mouth gag used for visibility
+  - No preprocessing or image augmentation applied
+  - Ethical approval: IRB of Hanoi Medical University (1149/GCN-HMUIRB, 28 Dec 2023)
+  - Data collected between January and May 2024
