@@ -31,8 +31,12 @@ This repository serves as a centralized database of datasets for artificial inte
 | Orthopantomogram teeth segmentation and numbering dataset | Zenodo           | [Dataset Link](https://zenodo.org/records/10538750?token=eyJhbGciOiJIUzUxMiJ9...) | 2024 | Pakistan     | 10.5281/zenodo.10538750                   | Aga Khan University Hospital    | Developing AI models for dental diagnostics | Orthopantomogram (OPG)             | Orthophos XG 3-D (Dentsply Sirona GmbH) operated at 60–90 kV and 3–16 mA | Creative Commons License    | Specialist dentists | Instance segmentation | JSON format for annotations; PNG for images | 250 images of permanent dentition, 2440 × 1292 pixels | OPG_001.png, OPG_002.png, ... |  
 | AlphaDent Dataset | GitHub | [AlphaDent GitHub Repository](https://github.com/ZFTurbo/AlphaDent) | 2025 | Russia | N/A | Sechenov University, AlphaChip LLC, HSE University | Detection and segmentation of dental pathologies | Intraoral DSLR photography | Canon 6D Mark II with Canon 100mm f/2.8L macro IS USM lens | Open License (not specified) | 1 (dentist) | Instance segmentation | JPEG (.jpg), PNG (.png), TXT (.txt) | ~1320 images (>5000x3000 px); 295 patients | p001_F_32_001.jpg, 01_class_5.png, p001_F_32_001.txt |
 | Gingivitis Image Captioning Dataset | Mendeley | [Gingivitis Image Captioning Dataset](https://data.mendeley.com/datasets/3253gj88rr/1) | 2024 | Vietnam | 10.17632/3253gj88rr.1 | Hanoi Medical University | Gingivitis diagnosis, image captioning research | Intraoral photograph | Nikon D810 with Nikon AF-S 105mm F/1.4EED Nano lens, Godox MF12 Macro Flash | CC BY 4.0 | 3 (periodontists with >10 years experience) | Label (MGI scores) and captions | JPEG (.jpg), CSV, TXT | 1,096 high-resolution intraoral images of 12 anterior teeth | 00945.jpg, 00945.txt |
-
-
+| Incisor Pulp Chamber Tomographic Images (IPCTI) | Mendeley | [IPCTI Dataset](https://data.mendeley.com/datasets/) | 2025 | Brazil | 10.1016/j.dib.2025.112033 | Universidade Federal de Juiz de Fora | Forensic odontology, dental age estimation | Cone Beam Computed Tomography (CBCT) | Not specified (standardized CBCT protocols) | CC (Creative Commons) | Not specified | Box (bounding box) | Image files | CBCT coronal and sagittal views of upper central incisors, ages 18-60 | Not specified |
+| Dental OPG X-ray Dataset (Six Classes) | Mendeley | [Dental OPG X-ray Dataset](https://data.mendeley.com/datasets/c4hhrkxytw/4) | 2024 | Bangladesh | 10.17632/c4hhrkxytw.4 | Three private dental clinics, Dhaka | Dental disease detection and classification | Panoramic radiographs | Samsung A52 (SM-A525F), 64 megapixels | CC BY-NC 4.0 | 2 (dentists with 16 and 32 years experience) | Box (bounding box) | JPEG (.jpg), JSON | 232 original + 604 augmented panoramic images, 1176 x 603 px | Not specified |
+| Varying Views of Teeth Dataset | Mendeley | [Varying Views of Teeth Dataset](https://data.mendeley.com/datasets/6zsnhrds9t/1) | 2024 | India | 10.1016/j.dib.2024.110772 | Bharati Vidyapeeth University | Dental diagnosis, pediatric dentistry research | Intraoral photograph | Not specified | CC (Creative Commons) | Not specified | Label | Image files | 9,562 images of healthy teeth from children aged 1-14 | Not specified |
+| Dental Periapical X-ray Dataset | Mendeley | [Dental Periapical X-ray Dataset](https://data.mendeley.com/datasets/) | 2024 | Jordan | 10.1016/j.dib.2024.110539 | Jerash Governmental Hospital | Dental periapical disease diagnosis | Intraoral radiographs (periapical) | Not specified | CC BY-NC 4.0 | Not specified | Pixel-level (segmentation) | Image files | 929 high-quality periapical X-ray images | Not specified |
+| Apical Periodontitis Panoramic Dataset | Mendeley | [Apical Periodontitis Dataset](https://data.mendeley.com/datasets/kx52tk2ddj/3) | 2024 | Vietnam | 10.1016/j.dib.2024.110486 | Hanoi Medical University | Apical periodontitis detection and classification | Panoramic radiographs | Not specified | CC BY-NC 4.0 | 3 (experienced dentists) | Label (Periapical Lesions Classification) | JPEG (.jpg) | 3,926 original + 17,004 augmented panoramic radiographs | Not specified |
+| Histopathological Imaging Database for Oral Cancer | Mendeley | [Histopathological Oral Cancer Dataset](https://data.mendeley.com/datasets/ftmp4cvtmb/2) | 2020 | India | 10.1016/j.dib.2020.105114 | Ayursundra Healthcare, Dr B. Borooah Cancer Institute, Guwahati | Oral squamous cell carcinoma diagnosis | Histopathology (H&E stained slides) | Leica ICC50 HD microscope | CC BY 4.0 | Medical experts | Label | Image files | 1,224 images: 528 at 100x and 696 at 400x magnification, from 230 patients | Not specified |
 
 
 
@@ -535,3 +539,161 @@ This repository serves as a centralized database of datasets for artificial inte
   - No preprocessing or image augmentation applied
   - Ethical approval: IRB of Hanoi Medical University (1149/GCN-HMUIRB, 28 Dec 2023)
   - Data collected between January and May 2024
+
+### Incisor Pulp Chamber Tomographic Images (IPCTI)
+
+- **Database:** Mendeley
+- **Dataset URL:** [IPCTI Dataset](https://data.mendeley.com/datasets/)
+- **Year:** 2025
+- **Country:** Brazil
+- **DOI:** 10.1016/j.dib.2025.112033
+- **Source of Data Acquisition:** Universidade Federal de Juiz de Fora, Zona da Mata Mineira
+- **Reason for Image Acquisition:** Forensic odontology, dental age estimation
+- **Imaging Modality:** Cone Beam Computed Tomography (CBCT)
+- **Equipment Detail:** Not specified (standardized CBCT scanning protocols)
+- **License Type:** CC (Creative Commons)
+- **Annotators:** Not specified
+- **Annotation Type:** Bounding box annotations for tooth localization
+- **Files Formats:** Image files
+- **Images and Resolutions:**
+  - CBCT images of upper central incisors
+  - Coronal and sagittal views per scan
+  - Cohort: Brazilian individuals aged 18 to 60
+- **Example of File Names:** Not specified
+- **Additional Notes:**
+  - Crown and pulp chamber dimensions used as age indicators (secondary dentin deposition)
+  - Supports tooth detection, segmentation, and age estimation tasks
+
+### Dental OPG X-ray Dataset (Six Classes)
+
+- **Database:** Mendeley
+- **Dataset URL:** [Dental OPG X-ray Dataset](https://data.mendeley.com/datasets/c4hhrkxytw/4)
+- **Year:** 2024
+- **Country:** Bangladesh
+- **DOI:** 10.17632/c4hhrkxytw.4
+- **Associated Publication DOI:** 10.1016/j.dib.2024.110970
+- **Source of Data Acquisition:** Three private dental clinics: Prescription Point Ltd, LabAid Specialized Hospital, Ibn Sina Diagnostic and Imaging Center, Dhaka
+- **Reason for Image Acquisition:** Dental disease detection and classification using deep learning
+- **Imaging Modality:** Panoramic radiographs
+- **Equipment Detail:** Samsung A52 (SM-A525F), 64 megapixels, f/1.8, 26 mm focal length
+- **License Type:** CC BY-NC 4.0
+- **Annotators:** 2 dentists (16 and 32 years of experience); annotated using CVAT
+- **Annotation Type:** Bounding box (object detection)
+- **Files Formats:** JPEG (.jpg), JSON
+- **Images and Resolutions:**
+  - 232 original panoramic radiographs
+  - 604 augmented images (train: 558, test: 23, valid: 23)
+  - Median image ratio: 1176 x 603 px, aspect ratio 16:9
+  - Total instances across all classes: 1,204
+  - Dataset size: 197 MB
+- **Six Classes:** Healthy teeth, caries, impacted teeth, infections, fractured teeth, broken-down crown/root (BDC/BDR)
+- **Example of File Names:** Not specified
+- **Additional Notes:**
+  - CLAHE applied for image enhancement
+  - Augmentation via Roboflow (horizontal flips, rotations, shear, exposure adjustments, mosaic)
+  - Excludes individuals under 10 years of age
+  - Ethical approval: Bangladesh Dental College & Hospital (Protocol No: MK-198109)
+  - Evaluated with YOLOv7: precision 96.03%, recall 86.53%, mAP50 93.54%
+
+### Varying Views of Maxillary and Mandibular Aspects of Teeth Dataset
+
+- **Database:** Mendeley
+- **Dataset URL:** [Varying Views of Teeth Dataset](https://data.mendeley.com/datasets/6zsnhrds9t/1)
+- **Year:** 2024
+- **Country:** India
+- **DOI:** 10.1016/j.dib.2024.110772
+- **Source of Data Acquisition:** Bharati Vidyapeeth (Deemed to be University) and Vishwakarma University
+- **Reason for Image Acquisition:** Dental condition analysis in children, machine learning research
+- **Imaging Modality:** Intraoral photograph
+- **Equipment Detail:** Not specified
+- **License Type:** CC (Creative Commons)
+- **Annotators:** Not specified
+- **Annotation Type:** Label (categorized by view and arch type)
+- **Files Formats:** Image files
+- **Images and Resolutions:**
+  - 9,562 images of healthy (non-carious) teeth
+  - Children aged 1 to 14 years
+  - Eight subcategories: maxillary/mandibular arches, front, right, left, and occlusal views
+- **Example of File Names:** Not specified
+- **Additional Notes:**
+  - Covers primary, mixed, and permanent dentition
+  - Stored under eight subcategories in the Mendeley repository
+  - Intended for remote dental assessment in underserved areas
+
+### Dental Periapical X-ray Dataset
+
+- **Database:** Mendeley
+- **Dataset URL:** [Dental Periapical X-ray Dataset](https://data.mendeley.com/datasets/)
+- **Year:** 2024
+- **Country:** Jordan
+- **DOI:** 10.1016/j.dib.2024.110539
+- **Source of Data Acquisition:** Oral and dental health department, Jerash Governmental Hospital, North Jordan
+- **Reason for Image Acquisition:** Dental periapical disease diagnosis using deep learning
+- **Imaging Modality:** Intraoral radiographs (periapical)
+- **Equipment Detail:** Not specified
+- **License Type:** CC BY-NC 4.0
+- **Annotators:** Not specified
+- **Annotation Type:** Pixel-level segmentation (healthy vs. diseased)
+- **Files Formats:** Image files
+- **Images and Resolutions:**
+  - 929 high-quality periapical X-ray images
+  - Subjects of varying ages with dental and pulpal diseases, bone loss, periapical pathologies
+- **Example of File Names:** Not specified
+- **Additional Notes:**
+  - Images obtained during routine examinations and treatment procedures
+  - Segmented into healthy and diseased categories
+  - Supports automated diagnosis of caries, pulpal diseases, and periapical pathologies
+
+### Apical Periodontitis Panoramic Radiographs Dataset
+
+- **Database:** Mendeley
+- **Dataset URL:** [Apical Periodontitis Dataset](https://data.mendeley.com/datasets/kx52tk2ddj/3)
+- **Year:** 2024
+- **Country:** Vietnam
+- **DOI:** 10.1016/j.dib.2024.110486
+- **Source of Data Acquisition:** High-quality Dental Treatment Centre, School of Dentistry, Hanoi Medical University
+- **Reason for Image Acquisition:** Apical periodontitis detection and classification
+- **Imaging Modality:** Panoramic radiographs
+- **Equipment Detail:** Not specified
+- **License Type:** CC BY-NC 4.0
+- **Annotators:** 3 experienced dentists
+- **Annotation Type:** Label (based on Periapical Lesions Classification)
+- **Files Formats:** JPEG (.jpg)
+- **Images and Resolutions:**
+  - 3,926 original panoramic radiographs (from 16,519 screened)
+  - 17,004 augmented images (scaling, mirroring, flipping)
+  - 6,029 apical lesions expanded to 25,827 post-augmentation
+- **Example of File Names:** Not specified
+- **Additional Notes:**
+  - Data collected between January 2016 and March 2021
+  - Lesions classified by Periapical Lesions Classification system
+  - Augmentation performed in Python (PyCharm): random scaling (0.8-1.2x), mirroring, rotation (-90 to 180 degrees), noise addition
+  - Ethical approval: HMUIRB463 (03 Aug 2021)
+
+### Histopathological Imaging Database for Oral Cancer
+
+- **Database:** Mendeley
+- **Dataset URL:** [Histopathological Oral Cancer Dataset](https://data.mendeley.com/datasets/ftmp4cvtmb/2)
+- **Year:** 2020
+- **Country:** India
+- **DOI:** 10.1016/j.dib.2020.105114
+- **Source of Data Acquisition:** Ayursundra Healthcare Pvt. Ltd. and Dr B. Borooah Cancer Institute (BBCI), Guwahati, Assam
+- **Reason for Image Acquisition:** Oral squamous cell carcinoma (OSCC) diagnosis
+- **Imaging Modality:** Histopathology (H&E stained biopsy slides)
+- **Equipment Detail:** Leica ICC50 HD microscope
+- **License Type:** CC BY 4.0
+- **Annotators:** Medical experts
+- **Annotation Type:** Label (normal epithelium vs. OSCC)
+- **Files Formats:** Image files
+- **Images and Resolutions:**
+  - 1,224 total images from 230 patients
+  - Set 1: 528 images at 100x magnification (89 normal, 439 OSCC)
+  - Set 2: 696 images at 400x magnification (201 normal, 495 OSCC)
+  - Tissue sections from buccal mucosa
+- **Example of File Names:** Not specified
+- **Additional Notes:**
+  - Data collected from October 2016 to November 2017
+  - Punch biopsy specimens fixed in 4% buffered formalin, dehydrated in alcohol series, cleared in xylene
+  - 100x images suitable for architectural/tissue-level analysis
+  - 400x images suitable for cellular-level textural feature analysis
+  - First publicly available dataset of normal oral epithelium and OSCC histopathological images
