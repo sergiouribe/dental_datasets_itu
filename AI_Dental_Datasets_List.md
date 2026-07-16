@@ -36,7 +36,8 @@ This repository serves as a centralized database of datasets for artificial inte
 | Varying Views of Teeth Dataset | Mendeley | [Varying Views of Teeth Dataset](https://data.mendeley.com/datasets/6zsnhrds9t/1) | 2024 | India | 10.1016/j.dib.2024.110772 | Bharati Vidyapeeth University | Dental diagnosis, pediatric dentistry research | Intraoral photograph | Not specified | CC (Creative Commons) | Not specified | Label | Image files | 9,562 images of healthy teeth from children aged 1-14 | Not specified |
 | Dental Periapical X-ray Dataset | Mendeley | [Dental Periapical X-ray Dataset](https://data.mendeley.com/datasets/) | 2024 | Jordan | 10.1016/j.dib.2024.110539 | Jerash Governmental Hospital | Dental periapical disease diagnosis | Intraoral radiographs (periapical) | Not specified | CC BY-NC 4.0 | Not specified | Pixel-level (segmentation) | Image files | 929 high-quality periapical X-ray images | Not specified |
 | Apical Periodontitis Panoramic Dataset | Mendeley | [Apical Periodontitis Dataset](https://data.mendeley.com/datasets/kx52tk2ddj/3) | 2024 | Vietnam | 10.1016/j.dib.2024.110486 | Hanoi Medical University | Apical periodontitis detection and classification | Panoramic radiographs | Not specified | CC BY-NC 4.0 | 3 (experienced dentists) | Label (Periapical Lesions Classification) | JPEG (.jpg) | 3,926 original + 17,004 augmented panoramic radiographs | Not specified |
-| Histopathological Imaging Database for Oral Cancer | Mendeley | [Histopathological Oral Cancer Dataset](https://data.mendeley.com/datasets/ftmp4cvtmb/2) | 2020 | India | 10.1016/j.dib.2020.105114 | Ayursundra Healthcare, Dr B. Borooah Cancer Institute, Guwahati | Oral squamous cell carcinoma diagnosis | Histopathology (H&E stained slides) | Leica ICC50 HD microscope | CC BY 4.0 | Medical experts | Label | Image files | 1,224 images: 528 at 100x and 696 at 400x magnification, from 230 patients | Not specified |
+| Histopathological Imaging Database for Oral Cancer | Mendeley | [Histopathological Oral Cancer Dataset](https://data.mendeley.com/datasets/ftmp4cvtmb/2) | 2020 | India | 10.1016/j.dib.2020.105114 | Ayursundra Healthcare, Dr B. Borooah Cancer Institute, Guwahati | Oral squamous cell carcinoma diagnosis | Histopathology (H&E stained slides) | Leica ICC50 HD microscope | CC BY 4.0 | Medical experts | Label | Image files | 1,224 images: 528 at 100x and 696 at 400x magnification, from 230 patients | Not specified | 
+| Dental caries in bitewing radiographs | Mendeley | https://data.mendeley.com/datasets/4fbdxs7s7w/1 | 2023 | Czech Republic | 10.17632/4fbdxs7s7w.1 | Hospital | Caries detection research | Bitewing radiographs | N/A | CC (standard Mendeley) | 8 (5 experienced, 3 less) | Box (bounding boxes) | PNG, COCO JSON | 100 images, 1068x847 px | N/A |
 
 
 
@@ -693,6 +694,24 @@ This repository serves as a centralized database of datasets for artificial inte
 - **Example of File Names:** Not specified
 - **Additional Notes:**
   - Data collected from October 2016 to November 2017
+ 
+### Dental caries in bitewing radiographs
+- **Database:** Mendeley
+- **Dataset URL:** https://data.mendeley.com/datasets/4fbdxs7s7w/1
+- **Year:** 2023
+- **Country:** Czech Republic
+- **DOI:** 10.17632/4fbdxs7s7w.1
+- **Source:** Hospital information system (Univerzita Karlova, ČVUT)
+- **Reason:** Caries lesion detection, inter-annotator variability, ML evaluation
+- **Imaging Modality:** Bitewing radiographs
+- **Equipment:** N/A
+- **License:** Open (Mendeley)
+- **Annotators:** 8 dentists (5 experienced, 3 less)
+- **Annotation Type:** Rectangular bounding boxes (COCO JSON)
+- **Files Formats:** PNG images, COCO JSON annotations
+- **Images and Resolutions:** 100 images, 1068x847 px (rescaled/padded)
+- **Example:** dental_rtg_test.zip (75.4 MB)
+- **Notes:** Used in Tichý et al. (Clinical Oral Investigations)
   - Punch biopsy specimens fixed in 4% buffered formalin, dehydrated in alcohol series, cleared in xylene
   - 100x images suitable for architectural/tissue-level analysis
   - 400x images suitable for cellular-level textural feature analysis
