@@ -36,7 +36,7 @@ If you use this repository in your research, please cite it as follows:
 
 title={Publicly Available Dental Image Datasets for Artificial Intelligence},
 
-author={Sergio E. Uribe and Julien Issa and Fatemeh Sohrabniya and Falk Schwendicke},
+author={Sergio E. Uribe, Julien Issa, Fatemeh Sohrabniya and Falk Schwendicke},
 
 year={2024},
 
