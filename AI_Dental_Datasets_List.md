@@ -39,6 +39,10 @@ This repository serves as a centralized database of datasets for artificial inte
 | Histopathological Imaging Database for Oral Cancer | Mendeley | [Histopathological Oral Cancer Dataset](https://data.mendeley.com/datasets/ftmp4cvtmb/2) | 2020 | India | 10.1016/j.dib.2020.105114 | Ayursundra Healthcare, Dr B. Borooah Cancer Institute, Guwahati | Oral squamous cell carcinoma diagnosis | Histopathology (H&E stained slides) | Leica ICC50 HD microscope | CC BY 4.0 | Medical experts | Label | Image files | 1,224 images: 528 at 100x and 696 at 400x magnification, from 230 patients | Not specified |
 | Dental caries in bitewing radiographs | Mendeley | [Dental caries in bitewing radiographs](https://data.mendeley.com/datasets/4fbdxs7s7w/1) | 2023 | Czech Republic | 10.17632/4fbdxs7s7w.1 | Hospital | Caries detection research | Bitewing radiographs | N/A | CC (standard Mendeley) | 8 (5 experienced, 3 less) | Box (bounding boxes) | PNG, COCO JSON | 100 images, 1068x847 px | N/A |
 | COLLECT: Counterfactual Oral Lesion Library for Explainable Concept Testing | Borealis | [COLLECT Dataset](https://doi.org/10.5683/SP3/KXYCNY) | 2026 | Canada | 10.5683/SP3/KXYCNY | Routine dental examinations; clinical intra-oral images collected by certified oral pathologists | AI model robustness, interpretability, explainable concept testing, and diagnostic reliability in oral lesion classification | Intraoral clinical photography | Digital cameras under standard clinic lighting | CC BY-NC-ND 4.0 | Certified oral pathologists and oral health experts | Expert-validated lesion labels and structured counterfactual transformations | Image files | 600 images total: 40 baseline images × 5 versions each; resolution not specified | Not specified |
+| AKUDENTAL Teeth Instance Segmentation Dataset | GitHub | AKUDENTAL | 2026 | Türkiye | 10.1186/s12903-025-07645-0 | Akdeniz University Dental Hospital | Teeth segmentation, detection, numbering, and cross-dataset AI benchmarking | Panoramic radiographs | Two panoramic X-ray devices; specific models not reported | Publicly available for non-commercial academic research | Expert annotator | Instance-level polygon segmentation | Image files, JSON annotations | 333 panoramic radiographs; 2494×1435 to 2871×1536 px; average approximately 2908×1445 px | Not specified |
+| BRAR-anchored Multimodal Dataset | Figshare | BRAR-anchored multimodal dataset | 2025 | China | 10.1038/s41597-025-06400-y | Department of Periodontology, Shanghai Stomatological Hospital | Periodontal bone resorption assessment, grading, and AI research | Panoramic radiographs with demographic and clinical metadata | Not specified | Openly available via Figshare | Two trained dentists; validated by a senior oral radiology expert | Patient- and tooth-level clinical annotations; BRAR severity grading | JPG, CSV, PDF | 1,104 full-mouth panoramic radiographs; resolution not specified | Anonymized identifiers |
+| Annotated Clinical Image Dataset for Malignant and Potentially Malignant Oral Lesions | Zenodo | Annotated Clinical Image Dataset | 2025 | Egypt | 10.1038/s41415-025-9007-6 | Oral Medicine Clinic, Faculty of Dentistry, Cairo University | AI training and classification of normal, low-risk, and high-risk oral lesions | Intraoral clinical photography | Standardized clinical photography with proper lighting; camera model not specified | CC BY-NC-ND 4.0; restricted access upon request | Two oral medicine specialists with PhDs and >10 years clinical experience | Bounding-box annotations of lesions and anatomical regions; JSON | JPG, JSON | 9,201 original intraoral images; dimensions vary from 40,992 to 24,216,480 total pixels | Not specified |
+| Dataset of Annotated Oral Cavity Images for Oral Cancer Detection | Zenodo | Dataset of Annotated Oral Cavity Images for Oral Cancer Detection | 2024 | Sri Lanka | 10.1016/j.oraloncology.2024.106946 | Dental Teaching Hospital, University of Peradeniya | Diagnosis of oral cancer and oral potentially malignant disorders | Intraoral oral-cavity photography | Mobile phone cameras | Open access | Clinicians using custom-made annotation software | Polygon annotations of oral cavity and lesion boundaries; COCO format | Image files, COCO annotations, patient metadata | 3,000 anonymized high-quality images from 714 patients | Not specified |
 
 
 ## LIST
@@ -750,5 +754,129 @@ This repository serves as a centralized database of datasets for artificial inte
   - **Size modifications:** Aphthous ulcer lesion area was progressively increased in four steps, with each stage adding 25% of the original lesion size. Geographic Tongue, Hairy Tongue, and OSCC lesions were progressively reduced across four steps, with each step decreasing lesion size by 10%.
   - **Color modifications:** Aphthous ulcers and Hairy Tongue lesions had red saturation increased in 25% increments to approximate the appearance of OSCC and Geographic Tongue, respectively. OSCC lesions had whiteness progressively increased to mimic Aphthous Ulcer coloration. Geographic Tongue lesions received a dark brown tint to resemble Hairy Tongue.
   - **Opacity modifications:** Lesions were progressively faded by decreasing opacity by 25% per stage until the lesion completely disappeared and was replaced with healthy-appearing mucosa.
+
+### AKUDENTAL Teeth Instance Segmentation Dataset
+
+- **Database:** GitHub
+- **Dataset URL:** [AKUDENTAL](https://github.com/melihoz/AKUDENTAL)
+- **Year:** 2026
+- **Country:** Türkiye
+- **DOI:** 10.1186/s12903-025-07645-0
+- **Source of Data Acquisition:** Akdeniz University Dental Hospital
+- **Reason for Image Acquisition:** Development and evaluation of AI methods for tooth segmentation, object detection, tooth identification, and cross-dataset benchmarking
+- **Imaging Modality:** Panoramic radiographs
+- **Equipment Detail:** Two panoramic X-ray devices; specific device models not reported
+- **License Type:** Publicly available for non-commercial academic research
+- **Annotators:** Expert annotator
+- **Annotation Type:** Instance-level polygon-based segmentation
+- **Annotation Software:** Labelme
+- **Files Formats:** Image files and annotation files
+- **Images and Resolutions:**
+  - 333 panoramic radiographs
+  - Image dimensions range from 2494 × 1435 to 2871 × 1536 pixels
+  - Average resolution approximately 2908 × 1445 pixels
+  - 190 female and 143 male adult subjects
+- **Annotated Classes:**
+  - 32 permanent tooth classes based on FDI numbering
+  - Bridge
+  - Filling/Crown
+  - Implant
+- **Additional Notes:**
+  - Initially, 700 anonymized images were collected and filtered to create the final dataset.
+  - Primary and supernumerary teeth were excluded.
+  - Polygon annotations were created for individual teeth and dental structures.
+  - Supports multiclass segmentation, instance segmentation, and object detection.
+  - Associated publication: Oz M, Sengul A, Hatipoglu M, Danisman T. *AKUDENTAL teeth instance segmentation dataset: a cross-dataset analysis*. BMC Oral Health. 2026;26:247.
+
+### BRAR-anchored Multimodal Dataset of Panoramic Radiographs for Periodontal Bone Resorption Grading
+
+- **Database:** Figshare
+- **Dataset URL:** [BRAR-anchored multimodal dataset](https://doi.org/10.6084/m9.figshare.30155974.v3)
+- **Year:** 2025
+- **Country:** China
+- **DOI:** 10.1038/s41597-025-06400-y
+- **Dataset DOI:** 10.6084/m9.figshare.30155974.v3
+- **Source of Data Acquisition:** Department of Periodontology, Shanghai Stomatological Hospital, Fudan University
+- **Reason for Image Acquisition:** Periodontal bone resorption assessment, standardized severity grading, AI development, and clinical research
+- **Imaging Modality:** Full-mouth panoramic radiographs with demographic and clinical metadata
+- **Equipment Detail:** Not specified
+- **License Type:** Publicly available via Figshare
+- **Annotators:** Two trained dentists; annotations subsequently validated by a senior oral radiology expert
+- **Annotation Type:** Patient-level and tooth-level clinical annotations, including bone resorption measurements and Bone Resorption Age Ratio (BRAR)
+- **Files Formats:** JPG, CSV, PDF
+- **Images and Resolutions:**
+  - 1,104 panoramic radiographs from 1,104 patients
+  - Image resolution not specified
+- **Additional Information:**
+  - Demographic data include age and gender.
+  - Tooth-level indicators include missing teeth, implants, residual roots, and opposing pairs of functional teeth.
+  - BRAR is used to classify periodontal bone resorption severity into three grades:
+    - Grade 1: BRAR < 0.25
+    - Grade 2: BRAR 0.25–1.0
+    - Grade 3: BRAR > 1.0
+  - Includes a machine-readable codebook and an annotation/assessment protocol.
+- **Example of File Names:** Anonymized identifiers; specific examples not reported.
+
+### Annotated Clinical Image Dataset for AI Classification of Malignant and Potentially Malignant Oral Lesions
+
+- **Database:** Zenodo
+- **Dataset URL:** [Annotated Clinical Image Dataset](https://zenodo.org/records/14571990)
+- **Year:** 2025
+- **Country:** Egypt
+- **DOI:** 10.1038/s41415-025-9007-6
+- **Source of Data Acquisition:** Oral Medicine Clinic, Faculty of Dentistry, Cairo University
+- **Reason for Image Acquisition:** AI training, validation, and testing for classification of normal oral findings, low-risk lesions, oral potentially malignant disorders, and oral cancer
+- **Imaging Modality:** Intraoral clinical photography
+- **Equipment Detail:** Full-mouth clinical photographs captured with proper lighting; camera model not specified
+- **License Type:** CC BY-NC-ND 4.0; restricted access upon request
+- **Annotators:** Two oral medicine specialists, each with a PhD and more than 10 years of clinical experience
+- **Annotation Type:** Bounding-box annotations outlining lesions and designated oral regions
+- **Annotation Software:** LabelMe
+- **Files Formats:** JPG, JSON
+- **Images and Resolutions:**
+  - 9,201 original, non-augmented intraoral images
+  - 4,405 images classified as normal
+  - 2,314 images classified as low risk
+  - 2,482 images classified as high risk
+  - Image sizes range from 40,992 to 24,216,480 total pixels
+- **Additional Notes:**
+  - Images include multiple anatomical sites within the oral cavity.
+  - The high-risk category includes oral cancer and oral potentially malignant disorders.
+  - The low-risk category includes oral lesions that do not fall within the normal or high-risk groups.
+  - Blurred, poorly illuminated, and augmented images were excluded.
+  - All images were anonymized.
+- **Example of File Names:** Not specified.
+
+### Dataset of Annotated Oral Cavity Images for Oral Cancer Detection
+
+- **Database:** Zenodo
+- **Dataset URL:** [Dataset of Annotated Oral Cavity Images for Oral Cancer Detection](https://zenodo.org/records/10664056)
+- **Year:** 2024
+- **Country:** Sri Lanka
+- **DOI:** 10.1016/j.oraloncology.2024.106946
+- **Source of Data Acquisition:** Dental Teaching Hospital, University of Peradeniya
+- **Reason for Image Acquisition:** Development of machine learning and AI systems for diagnosis and prognosis of oral cancer and oral potentially malignant disorders
+- **Imaging Modality:** Oral cavity clinical photography
+- **Equipment Detail:** Mobile phone cameras
+- **License Type:** Open access
+- **Annotators:** Clinicians
+- **Annotation Type:** Polygon-shaped annotations of oral cavity boundaries and lesion boundaries
+- **Annotation Software:** Custom-made software developed by the research team
+- **Files Formats:** Image files, COCO-format annotations, and patient metadata
+- **Images and Resolutions:**
+  - 3,000 high-quality anonymized oral cavity images
+  - Images obtained from 714 patients
+  - Resolution not specified
+- **Categories:**
+  - Healthy
+  - Benign
+  - Oral potentially malignant disorders (OPMD)
+  - Oral cancer (OCA)
+- **Additional Notes:**
+  - Patient metadata include age, sex, diagnosis, and risk-factor profiles.
+  - Risk-factor metadata include smoking, alcohol consumption, and betel chewing habits.
+  - The dataset is provided in COCO format to facilitate machine learning and AI development.
+  - Images were collected following ethical approval and informed consent.
+- **Example of File Names:** Not specified.
   - The controlled counterfactual variations simulate clinically meaningful changes and support research on explainable AI, model robustness, interpretability, and diagnostic reliability.
   - **Dataset publication date:** 2026-02-21
