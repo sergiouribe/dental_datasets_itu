@@ -43,6 +43,7 @@ This repository serves as a centralized database of datasets for artificial inte
 | BRAR-anchored Multimodal Dataset | Figshare | BRAR-anchored multimodal dataset | 2025 | China | 10.1038/s41597-025-06400-y | Department of Periodontology, Shanghai Stomatological Hospital | Periodontal bone resorption assessment, grading, and AI research | Panoramic radiographs with demographic and clinical metadata | Not specified | Openly available via Figshare | Two trained dentists; validated by a senior oral radiology expert | Patient- and tooth-level clinical annotations; BRAR severity grading | JPG, CSV, PDF | 1,104 full-mouth panoramic radiographs; resolution not specified | Anonymized identifiers |
 | Annotated Clinical Image Dataset for Malignant and Potentially Malignant Oral Lesions | Zenodo | Annotated Clinical Image Dataset | 2025 | Egypt | 10.1038/s41415-025-9007-6 | Oral Medicine Clinic, Faculty of Dentistry, Cairo University | AI training and classification of normal, low-risk, and high-risk oral lesions | Intraoral clinical photography | Standardized clinical photography with proper lighting; camera model not specified | CC BY-NC-ND 4.0; restricted access upon request | Two oral medicine specialists with PhDs and >10 years clinical experience | Bounding-box annotations of lesions and anatomical regions; JSON | JPG, JSON | 9,201 original intraoral images; dimensions vary from 40,992 to 24,216,480 total pixels | Not specified |
 | Dataset of Annotated Oral Cavity Images for Oral Cancer Detection | Zenodo | Dataset of Annotated Oral Cavity Images for Oral Cancer Detection | 2024 | Sri Lanka | 10.1016/j.oraloncology.2024.106946 | Dental Teaching Hospital, University of Peradeniya | Diagnosis of oral cancer and oral potentially malignant disorders | Intraoral oral-cavity photography | Mobile phone cameras | Open access | Clinicians using custom-made annotation software | Polygon annotations of oral cavity and lesion boundaries; COCO format | Image files, COCO annotations, patient metadata | 3,000 anonymized high-quality images from 714 patients | Not specified |
+| Annotated intraoral image dataset for dental caries detection | Zenodo / Scientific Data | [Zenodo](https://zenodo.org/records/14827784) | 2025 | Pakistan | 10.5281/zenodo.14827784 (dataset); 10.1038/s41597-025-05647-9 (paper) | Government schools, Mithi, Sindh (Aga Khan University) | AI-driven dental caries detection research | Intraoral photographs | Samsung Galaxy A23 (Android 14.0) | CC BY-NC-ND 4.0 | 2 dentists (>2 years experience), calibrated by specialist; third resolved disagreements | Bounding boxes (object detection; primary ‘d’, permanent ‘D’) | JPG; LabelMe (.json), YOLO (.txt), PASCAL VOC (.xml), COCO (.json) | 6,313 images (ages 10–24); with/without cheek retractors; 5 views per patient (maxillary/mandibular occlusal, left/right lateral, frontal) | Not specified |
 
 
 ## LIST
@@ -876,6 +877,28 @@ This repository serves as a centralized database of datasets for artificial inte
   - Patient metadata include age, sex, diagnosis, and risk-factor profiles.
   - Risk-factor metadata include smoking, alcohol consumption, and betel chewing habits.
   - The dataset is provided in COCO format to facilitate machine learning and AI development.
+ 
+### Annotated intraoral image dataset for dental caries detection
+- **Database:** Zenodo / Scientific Data
+- **Dataset URL:** https://zenodo.org/records/14827784
+- **Year:** 2025
+- **Country:** Pakistan
+- **DOI:** 10.5281/zenodo.14827784 (dataset); 10.1038/s41597-025-05647-9 (paper)
+- **Source of Data Acquisition:** Government schools of Mithi, Sindh; curated at Aga Khan University
+- **Reason for Image Acquisition:** Publicly available annotated dataset for AI dental caries detection
+- **Imaging Modality:** Intraoral photographs
+- **Equipment Detail:** Samsung Galaxy A23 (Android version 14.0)
+- **License Type:** Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)
+- **Annotators:** Two dentists (A.K., A.N.) with >2 years experience; calibrated by specialist (N.A.); disagreements resolved by third dentist
+- **Annotation Type:** Bounding boxes for visible carious teeth (labels ‘d’ primary, ‘D’ permanent)
+- **Files Formats:** JPG images; annotations in LabelMe (.json), YOLO (.txt), PASCAL VOC (.xml), COCO (.json)
+- **Images and Resolutions:** 6,313 images from individuals aged 10–24 years; mixed and permanent dentitions; captured with and without cheek retractors; five standardized views per patient (maxillary occlusal, mandibular occlusal, left lateral, right lateral, frontal); benchmark split 5050/631/631 (train/valid/test)
+- **Example of File Names:** Not specified
+- **Additional Notes:**
+  - Inter-rater reliability (Cohen’s Kappa) = 0.89 on 10% of images
+  - Benchmark models: YOLOv8s best (mAP = 0.841 @ 0.5 IoU)
+  - Limitations stated: single mobile device; no primary dentition (<10 years); no fluorosis annotations
+  - Ethical approval: ERC#2024-9433-29648 (Aga Khan University)
   - Images were collected following ethical approval and informed consent.
 - **Example of File Names:** Not specified.
   - The controlled counterfactual variations simulate clinically meaningful changes and support research on explainable AI, model robustness, interpretability, and diagnostic reliability.
