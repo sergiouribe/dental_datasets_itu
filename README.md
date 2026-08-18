@@ -28,9 +28,9 @@ We welcome contributions and feedback from the community. Please open an issue o
 
 
 
-## Citation
+# CITATION
 If you use this repository in your research, please cite it as follows:
-
+## Repository
 ### Bibtex
 ```bibtex
 @article{Uribe2026,
@@ -48,8 +48,26 @@ Uribe, S.E., Issa, J., Sohrabniya, F. & Schwendicke, F., 2026. *Publicly Availab
 ### Vancouver
 Uribe SE, Issa J, Sohrabniya F, Schwendicke F. Publicly Available Dental Image Datasets for Artificial Intelligence [Internet]. 2026 [cited YYYY/MM/DD]. Available from: https://github.com/sergiouribe/dental_datasets_itu
 
+## Published paper
+```@article{doi:10.1177/00220345241272052,
+  author = {S.E. Uribe and J. Issa and F. Sohrabniya and A. Denny and N.N. Kim and A.F. Dayo and A. Chaurasia and A. Sofi-Mahmudi and M. Büttner and F. Schwendicke},
+  title = {Publicly Available Dental Image Datasets for Artificial Intelligence},
+  journal = {Journal of Dental Research},
+  volume = {103},
+  number = {13},
+  pages = {1365-1374},
+  year = {2024},
+  doi = {10.1177/00220345241272052},
+  note = {PMID: 39422586},
+  url = {https://doi.org/10.1177/00220345241272052}
+}
 
+```
 
+### Harvard
+
+Uribe SE, Issa J, Sohrabniya F, et al. Publicly Available Dental Image Datasets for Artificial Intelligence. _Journal of Dental Research._ 2024;103(13):1365-1374. doi:10.1177/00220345241272052
+  
 
 
 ## License
