@@ -6,7 +6,7 @@ This repository contains an editable version of the results of the ITU/WHO Globa
 
 We welcome contributions and feedback from the community. Please open an issue or submit a pull request if you have any suggestions or comments.
 
-Note: This repository is intended for collaborative editing and review. 
+**Note**: This repository is intended for _**collaborative**_ editing and review. 
 
 
 ### Keywords
