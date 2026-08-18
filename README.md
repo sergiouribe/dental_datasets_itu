@@ -32,23 +32,23 @@ Note: This repository is intended for collaborative editing and review.
 
 If you use this repository in your research, please cite it as follows:
 
-@article{Uribe2024,
+@article{Uribe2026,
 
 title={Publicly Available Dental Image Datasets for Artificial Intelligence},
 
 author={Sergio E. Uribe, Julien Issa, Fatemeh Sohrabniya and Falk Schwendicke},
 
-year={2024},
+year={2026},
 
 url={https://github.com/sergiouribe/dental_datasets_itu }
 
 }
 
 ### Harvard format
-Uribe, S.E., Issa, J., Sohrabniya, F. & Schwendicke, F., 2024. *Publicly Available Dental Image Datasets for Artificial Intelligence*. Available at: <https://github.com/sergiouribe/dental_datasets_itu> [Accessed dd/mm/yyyy].
+Uribe, S.E., Issa, J., Sohrabniya, F. & Schwendicke, F., 2026. *Publicly Available Dental Image Datasets for Artificial Intelligence*. Available at: <https://github.com/sergiouribe/dental_datasets_itu> [Accessed dd/mm/yyyy].
 
 ### Vancouver
-Uribe SE, Issa J, Sohrabniya F, Schwendicke F. Publicly Available Dental Image Datasets for Artificial Intelligence [Internet]. 2024 [cited YYYY/MM/DD]. Available from: https://github.com/sergiouribe/dental_datasets_itu
+Uribe SE, Issa J, Sohrabniya F, Schwendicke F. Publicly Available Dental Image Datasets for Artificial Intelligence [Internet]. 2026 [cited YYYY/MM/DD]. Available from: https://github.com/sergiouribe/dental_datasets_itu
 
 
 
