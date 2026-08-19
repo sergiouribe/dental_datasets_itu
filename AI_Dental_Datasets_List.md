@@ -44,6 +44,7 @@ This repository serves as a centralized database of datasets for artificial inte
 | Annotated Clinical Image Dataset for Malignant and Potentially Malignant Oral Lesions | Zenodo | Annotated Clinical Image Dataset | 2025 | Egypt | 10.1038/s41415-025-9007-6 | Oral Medicine Clinic, Faculty of Dentistry, Cairo University | AI training and classification of normal, low-risk, and high-risk oral lesions | Intraoral clinical photography | Standardized clinical photography with proper lighting; camera model not specified | CC BY-NC-ND 4.0; restricted access upon request | Two oral medicine specialists with PhDs and >10 years clinical experience | Bounding-box annotations of lesions and anatomical regions; JSON | JPG, JSON | 9,201 original intraoral images; dimensions vary from 40,992 to 24,216,480 total pixels | Not specified |
 | Dataset of Annotated Oral Cavity Images for Oral Cancer Detection | Zenodo | Dataset of Annotated Oral Cavity Images for Oral Cancer Detection | 2024 | Sri Lanka | 10.1016/j.oraloncology.2024.106946 | Dental Teaching Hospital, University of Peradeniya | Diagnosis of oral cancer and oral potentially malignant disorders | Intraoral oral-cavity photography | Mobile phone cameras | Open access | Clinicians using custom-made annotation software | Polygon annotations of oral cavity and lesion boundaries; COCO format | Image files, COCO annotations, patient metadata | 3,000 anonymized high-quality images from 714 patients | Not specified |
 | Annotated intraoral image dataset for dental caries detection | Zenodo / Scientific Data | [Zenodo](https://zenodo.org/records/14827784) | 2025 | Pakistan | 10.5281/zenodo.14827784 (dataset); 10.1038/s41597-025-05647-9 (paper) | Government schools, Mithi, Sindh (Aga Khan University) | AI-driven dental caries detection research | Intraoral photographs | Samsung Galaxy A23 (Android 14.0) | CC BY-NC-ND 4.0 | 2 dentists (>2 years experience), calibrated by specialist; third resolved disagreements | Bounding boxes (object detection; primary ‘d’, permanent ‘D’) | JPG; LabelMe (.json), YOLO (.txt), PASCAL VOC (.xml), COCO (.json) | 6,313 images (ages 10–24); with/without cheek retractors; 5 views per patient (maxillary/mandibular occlusal, left/right lateral, frontal) | Not specified |
+| Mixed Dentition Orthopantomogram Dataset for AI Research in Pediatric Dental Cariology (MD-OPG) | Zenodo; GitHub | [Zenodo record](https://zenodo.org/records/17786082); [GitHub repository](https://github.com/IASBS-AI-LAB/MD-OPG/tree/main) | 2025 dataset release; 2026 publication | Iran (Zanjan) | [10.5281/zenodo.17786082](https://doi.org/10.5281/zenodo.17786082) | Retrospective, de-identified digital panoramic radiographs selected from archival records of a private dental clinic in Zanjan, Iran; dataset developed with the Institute for Advanced Studies in Basic Sciences (IASBS) and Zanjan University of Medical Sciences (ZUMS) | Pediatric dental assessment, diagnosis, treatment planning, and development/benchmarking of AI systems for pediatric dental-caries detection | Digital orthopantomogram (OPG); panoramic dental radiograph | Not specified in the publication, Zenodo record, or accessible repository metadata | No dataset-specific reuse license specified in accessible metadata; associated publication is CC BY, but this should not automatically be considered the dataset license | Two trained mid-level dental-radiograph annotators performed initial annotations; two experienced dental specialists reviewed and resolved disagreements to establish consensus labels | Polygonal region-of-interest annotations in JSON: `P` for proximal caries, `O` for occlusal caries, and rectangular `Z` for the smile-zone/crown-bearing region; derived smile-zone masks available for segmentation | PNG images; JSON annotations; distributed as `MD_OPG.rar` | 170 panoramic radiographs; each original full image is 1920 × 1535 px. Smile-zone images have variable original dimensions and are padded to 440 × 1000 px for segmentation. Dataset includes 716 proximal-caries labels and 179 occlusal-caries labels | Individual file names not specified in accessible documentation; archive: `MD_OPG.rar`; image files: `.png`; annotation files: `.json` |
 
 
 ## LIST
@@ -903,3 +904,42 @@ This repository serves as a centralized database of datasets for artificial inte
 - **Example of File Names:** Not specified.
   - The controlled counterfactual variations simulate clinically meaningful changes and support research on explainable AI, model robustness, interpretability, and diagnostic reliability.
   - **Dataset publication date:** 2026-02-21
+
+### MD-OPG Dataset
+
+- **Database:** Zenodo; GitHub  
+- **Dataset URL:** [Zenodo record](https://zenodo.org/records/17786082); [GitHub repository](https://github.com/IASBS-AI-LAB/MD-OPG/tree/main)  
+- **Year:** 2025 dataset release; 2026 benchmark publication  
+- **Country:** Iran, Zanjan  
+- **DOI:** [10.5281/zenodo.17786082](https://doi.org/10.5281/zenodo.17786082)  
+- **Source of Data Acquisition:** Retrospective, de-identified digital panoramic dental radiographs obtained from archival records of a private dental clinic in Zanjan, Iran. The dataset was developed through collaboration involving the Institute for Advanced Studies in Basic Sciences (IASBS) and Zanjan University of Medical Sciences (ZUMS).  
+- **Reason for Image Acquisition:** Routine pediatric dental assessment, diagnosis, and treatment planning. The collection was curated for AI research on detection and segmentation of dental caries in children with mixed dentition.  
+- **Imaging Modality:** Digital orthopantomogram (OPG), also called a panoramic dental radiograph.  
+- **Equipment Detail:** Not specified in the article, Zenodo record, or accessible GitHub metadata.  
+- **License Type:** No dataset-specific license was specified in the accessible metadata. The accompanying *Sensors* paper is distributed under a Creative Commons Attribution license; however, this publication license should not be assumed to apply to the image dataset.  
+- **Annotators:** Two trained mid-level dental-radiograph annotators conducted the initial annotation. Two experienced dental specialists subsequently reviewed annotations and resolved disagreements to create consensus labels.  
+- **Annotation Type:**  
+  - Polygon annotations for proximal caries, represented by `P`  
+  - Polygon annotations for occlusal caries, represented by `O`  
+  - Rectangular annotations for the smile-zone/crown-bearing region, represented by `Z`  
+  - Derived smile-zone masks for segmentation tasks  
+- **Files Formats:** PNG (`.png`) radiographs and JSON (`.json`) annotation files. The data are distributed in the archive `MD_OPG.rar`.  
+- **Images and Resolutions:**  
+  - 170 pediatric panoramic radiographs  
+  - Full radiograph resolution: 1920 × 1535 pixels  
+  - Smile-zone images have variable original dimensions  
+  - Smile-zone images are padded to 440 × 1000 pixels for segmentation benchmarking  
+  - 716 proximal-caries annotations  
+  - 179 occlusal-caries annotations  
+  - Patients were 3–12 years old, with a reported mean age of 7.2 years  
+  - Images were acquired between 2022 and 2024  
+- **Example of File Names:**  
+  - Archive: `MD_OPG.rar`  
+  - Image files: individual `.png` filenames not specified in the accessible documentation  
+  - Annotation files: individual `.json` filenames not specified in the accessible documentation  
+- **Additional Notes:**  
+  - The dataset focuses on children in the mixed-dentition stage.  
+  - Inclusion required digital OPGs showing mixed dentition with adequate image quality for caries annotation.  
+  - Images with poor quality, no target caries, or incomplete dentition were excluded.  
+  - The canonical dataset archive is hosted on Zenodo under DOI `10.5281/zenodo.17786082`.  
+  - Associated article DOI: [10.3390/s26082481](https://doi.org/10.3390/s26082481).  
