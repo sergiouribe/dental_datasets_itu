@@ -1,6 +1,6 @@
 # Dental Group AI4H ITU/WIPO/WHO Global Initiative Review Results
 
-This repository contains an editable version of the results of the ITU/WHO Global Initiative Dental Group's review of public datasets for dental imaging AI.
+This repository contains an editable version of the results of the ITU/WHO Global Initiative Oral Health (TG-OH) Group's review of public datasets for dental imaging AI.
 
 
 
