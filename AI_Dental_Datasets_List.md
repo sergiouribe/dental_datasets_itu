@@ -45,6 +45,10 @@ This repository serves as a centralized database of datasets for artificial inte
 | Dataset of Annotated Oral Cavity Images for Oral Cancer Detection | Zenodo | Dataset of Annotated Oral Cavity Images for Oral Cancer Detection | 2024 | Sri Lanka | 10.1016/j.oraloncology.2024.106946 | Dental Teaching Hospital, University of Peradeniya | Diagnosis of oral cancer and oral potentially malignant disorders | Intraoral oral-cavity photography | Mobile phone cameras | Open access | Clinicians using custom-made annotation software | Polygon annotations of oral cavity and lesion boundaries; COCO format | Image files, COCO annotations, patient metadata | 3,000 anonymized high-quality images from 714 patients | Not specified |
 | Annotated intraoral image dataset for dental caries detection | Zenodo / Scientific Data | [Zenodo](https://zenodo.org/records/14827784) | 2025 | Pakistan | 10.5281/zenodo.14827784 (dataset); 10.1038/s41597-025-05647-9 (paper) | Government schools, Mithi, Sindh (Aga Khan University) | AI-driven dental caries detection research | Intraoral photographs | Samsung Galaxy A23 (Android 14.0) | CC BY-NC-ND 4.0 | 2 dentists (>2 years experience), calibrated by specialist; third resolved disagreements | Bounding boxes (object detection; primary ‘d’, permanent ‘D’) | JPG; LabelMe (.json), YOLO (.txt), PASCAL VOC (.xml), COCO (.json) | 6,313 images (ages 10–24); with/without cheek retractors; 5 views per patient (maxillary/mandibular occlusal, left/right lateral, frontal) | Not specified |
 | Mixed Dentition Orthopantomogram Dataset for AI Research in Pediatric Dental Cariology (MD-OPG) | Zenodo; GitHub | [Zenodo record](https://zenodo.org/records/17786082); [GitHub repository](https://github.com/IASBS-AI-LAB/MD-OPG/tree/main) | 2025 dataset release; 2026 publication | Iran (Zanjan) | [10.5281/zenodo.17786082](https://doi.org/10.5281/zenodo.17786082) | Retrospective, de-identified digital panoramic radiographs selected from archival records of a private dental clinic in Zanjan, Iran; dataset developed with the Institute for Advanced Studies in Basic Sciences (IASBS) and Zanjan University of Medical Sciences (ZUMS) | Pediatric dental assessment, diagnosis, treatment planning, and development/benchmarking of AI systems for pediatric dental-caries detection | Digital orthopantomogram (OPG); panoramic dental radiograph | Not specified in the publication, Zenodo record, or accessible repository metadata | No dataset-specific reuse license specified in accessible metadata; associated publication is CC BY, but this should not automatically be considered the dataset license | Two trained mid-level dental-radiograph annotators performed initial annotations; two experienced dental specialists reviewed and resolved disagreements to establish consensus labels | Polygonal region-of-interest annotations in JSON: `P` for proximal caries, `O` for occlusal caries, and rectangular `Z` for the smile-zone/crown-bearing region; derived smile-zone masks available for segmentation | PNG images; JSON annotations; distributed as `MD_OPG.rar` | 170 panoramic radiographs; each original full image is 1920 × 1535 px. Smile-zone images have variable original dimensions and are padded to 440 × 1000 px for segmentation. Dataset includes 716 proximal-caries labels and 179 occlusal-caries labels | Individual file names not specified in accessible documentation; archive: `MD_OPG.rar`; image files: `.png`; annotation files: `.json` |
+| PRAD-10K | GitHub | [PRAD-10K](https://github.com/nkicsl/PRAD) | 2025 | China | 10.1007/978-3-032-05169-1_46 (MICCAI 2025 chapter); 10.48550/arXiv.2504.07760 (preprint) | Clinical periapical radiographs collected for endodontic and periodontic diagnosis; annotated by professional endodontists | Auxiliary diagnosis and benchmark model development for periapical radiograph analysis | Periapical radiographs (PR) | Not specified | Not specified; described as partially available to the public through an application process due to copyright and commercial considerations; 5,000 of the 10,000 images available on request | Two endodontists with over 8 years of experience, plus one computer science researcher | Pixel-level annotations for 9 anatomical structures, lesions, restorations, and medical devices; classification labels for periodontitis, apical periodontitis, and inadequate root canal filling | Not specified | 10,000 clinical periapical radiographs | Not specified |
+| Dataset for Automating Dental Condition Detection on Panoramic Radiographs | Zenodo | [Zenodo record](https://zenodo.org/records/15487430) | 2025 | Romania | 10.5281/zenodo.15487430 (dataset); 10.3390/diagnostics14202336 (Mureșanu et al. 2024); 10.1016/j.mex.2025.103696 (Eftimie et al. 2025) | Department of Maxillofacial Surgery and Radiology, Iuliu Hațieganu University of Medicine and Pharmacy, Cluj-Napoca, Romania; retrospectively collected April 2021-December 2023, plus an external validation set from other Cluj-Napoca medical centers | Automated detection of dental conditions to support diagnosis, treatment planning, and risk stratification | Panoramic radiographs | Vatech PCH-2500 (Vatech, Hwaseong, Republic of Korea) | CC BY 4.0, subject to an additional database usage agreement restricting use to non-commercial research and education and prohibiting redistribution | Three calibrated researchers using Makesense.ai v1.11.0; inter-observer agreement ICC = 0.91 | Bounding boxes (YOLO format) across 14 classes: implant, prosthetic restoration, obturation, endodontic treatment, carious lesion, bone resorption, impacted tooth, apical periodontitis, root fragment, furcation lesion, apical surgery, root resorption, orthodontic device, surgical device | JPEG (.jpg) | 1,628 panoramic images (training set), plus a separate external validation set of 180 radiographs | Not specified |
+| Expert Annotated Mandibular Third Molar (ExAn-MTM) Dataset | Mendeley | [ExAn-MTM Dataset](https://data.mendeley.com/datasets/t8k59p35p6/1) | 2025 | Türkiye | 10.1007/s11227-025-07775-w | Derived and re-annotated from the UESB panoramic radiograph dataset (Silva et al., 2018) | Detection and explainable AI classification of mandibular third molar eruption status to support surgical decision-making | Panoramic radiographs | Not specified | Not specified | One experienced oral and maxillofacial radiologist using the MakeSense annotation tool | Bounding boxes (YOLO format), 2 classes: e-MTM (erupted) and i-MTM (impacted) | Image files with YOLO-format label files; organized into train/valid folders | 973 panoramic radiographs; training set 875 images (624 e-MTM, 980 i-MTM annotations) | Not specified |
+| A Multi-Center Dental Panoramic Radiography Image Dataset for Impacted Teeth, Periodontitis, and Dental Caries | GitHub | [qinxin99/qinxini](https://github.com/qinxin99/qinxini) | 2024 | China | 10.1007/s10278-024-00972-8 | Three hospitals: Stomatological Hospital of the General Hospital of Ningxia Medical University (Yinchuan), People's Hospital of Yinchuan City (Ningxia), and a hospital in Shenzhen, Guangdong Province; ethical approval KYLL-2021066 | Multi-center benchmarking of segmentation and classification models for impacted teeth, periodontitis, and dental caries to improve cross-center generalization | Panoramic radiographs | Instrumentarium Dental OP200D (Center 1); Veraviewepocs and ORTHOPHOS XG (Center 2); Sirona X-ray machine (Center 3) | Available on request through GitHub; no standard license specified, stated for research use | Two dentists (25 and 18 years of clinical experience) performed initial annotation; two additional associate professors (15 years' experience each) reviewed and resolved disagreements | Manual contour outlining in ITK-SNAP, converted from DICOM to NIFTI; labels for impacted teeth, caries lesions, and periodontal bone-loss areas | DICOM converted to NIFTI | 6,580 total images across 3 centers (4,940 + 716 + 880 core sets after exclusions: 5,557 + 734 + 126 + 163 = 6,580 in final grouping); 2,567 impacted-teeth images, 2,736 periodontitis images, 1,277 caries images; resolutions 2976×1536, 2893×1480, 2440×1280, and 2440×1292 px depending on center | Not specified |
 
 
 ## LIST
@@ -942,4 +946,105 @@ This repository serves as a centralized database of datasets for artificial inte
   - Inclusion required digital OPGs showing mixed dentition with adequate image quality for caries annotation.  
   - Images with poor quality, no target caries, or incomplete dentition were excluded.  
   - The canonical dataset archive is hosted on Zenodo under DOI `10.5281/zenodo.17786082`.  
-  - Associated article DOI: [10.3390/s26082481](https://doi.org/10.3390/s26082481).  
+  - Associated article DOI: [10.3390/s26082481](https://doi.org/10.3390/s26082481).
+ 
+### PRAD-10K
+
+- **Database:** GitHub
+- **Dataset URL:** [PRAD-10K](https://github.com/nkicsl/PRAD)
+- **Year:** 2025
+- **Country:** China
+- **DOI:** 10.1007/978-3-032-05169-1_46 (MICCAI 2025 published chapter); preprint at 10.48550/arXiv.2504.07760
+- **Source of Data Acquisition:** Clinical periapical radiographs (PR), the imaging modality most used in endodontics and periodontics
+- **Reason for Image Acquisition:** Address the scarcity of large-scale, publicly available annotated PR datasets to support deep learning research in dental auxiliary diagnosis
+- **Imaging Modality:** Periapical radiographs (PR)
+- **Equipment Detail:** Not specified
+- **License Type:** Not specified as a standard open license. Due to copyright and commercial considerations, the dataset is only partially available to the public through an application process (5,000 of the 10,000 images available on request)
+- **Annotators:** Two endodontists with over 8 years of experience, plus one computer science researcher
+- **Annotation Type:**
+  - Pixel-level annotations for nine distinct categories, covering anatomical structures, lesions, and artificial restorations or medical devices
+  - Classification labels for periodontitis, apical periodontitis, and inadequate root canal filling
+- **Files Formats:** Not specified
+- **Images and Resolutions:** 10,000 clinical periapical radiograph images
+- **Example of File Names:** Not specified
+- **Additional Notes:**
+  - Accompanied by PRNet, a benchmark deep learning segmentation network introduced in the same paper
+  - An upgraded version, PRAD++, has since been accepted by IEEE Transactions on Medical Imaging
+  - Contact for access: aics@nankai.edu.cn or zzh_nkcs@mail.nankai.edu.cn
+
+### Dataset for Automating Dental Condition Detection on Panoramic Radiographs
+
+- **Database:** Zenodo
+- **Dataset URL:** [Zenodo record](https://zenodo.org/records/15487430)
+- **Year:** 2025
+- **Country:** Romania
+- **DOI:** 10.5281/zenodo.15487430 (dataset); 10.3390/diagnostics14202336 (Mureșanu et al., 2024, primary derivation paper); 10.1016/j.mex.2025.103696 (Eftimie et al., 2025, methods paper)
+- **Source of Data Acquisition:** Department of Maxillofacial Surgery and Radiology, Iuliu Hațieganu University of Medicine and Pharmacy, Cluj-Napoca, Romania. Images retrospectively collected from patients seen between April 2021 and December 2023. A second, external validation set of 180 radiographs was acquired from other medical centers in Cluj-Napoca. Patient consent was waived for the retrospective collection by the university Ethics Committee (reference 117/04.06.2024); all images were de-identified
+- **Reason for Image Acquisition:** Automate detection of dental conditions on panoramic radiographs to support diagnosis and risk stratification (low/medium/high risk categories)
+- **Imaging Modality:** Panoramic radiographs
+- **Equipment Detail:** Vatech PCH-2500 (Vatech, Hwaseong, Republic of Korea)
+- **License Type:** CC BY 4.0, together with an additional database usage agreement restricting use to non-commercial research and educational purposes and prohibiting redistribution to third parties
+- **Annotators:** Three calibrated researchers, using the open-source labeling platform Makesense.ai (v1.11.0); inter-observer agreement (ICC) of 0.91
+- **Annotation Type:** Bounding boxes exported in YOLO format across 14 classes: implant, prosthetic restoration, obturation, endodontic treatment, carious lesion, bone resorption, impacted tooth, apical periodontitis, root fragment, furcation lesion, apical surgery, root resorption, orthodontic device, and surgical device
+- **Files Formats:** JPEG
+- **Images and Resolutions:**
+  - Training dataset: 1,628 panoramic images
+  - External validation set: 180 panoramic radiographs from different medical centers
+- **Example of File Names:** Not specified
+- **Additional Notes:**
+  - Inclusion limited to adult patients with permanent dentition
+  - Images with large cysts, tumors, metallic artifacts, blurring, or severe technique errors were excluded
+  - Class labels are grouped into low, medium, and high clinical risk tiers
+  - Study conducted in accordance with the Declaration of Helsinki
+
+### Expert Annotated Mandibular Third Molar (ExAn-MTM) Dataset
+
+- **Database:** Mendeley
+- **Dataset URL:** [ExAn-MTM Dataset](https://data.mendeley.com/datasets/t8k59p35p6/1)
+- **Year:** 2025
+- **Country:** Türkiye
+- **DOI:** 10.1007/s11227-025-07775-w
+- **Source of Data Acquisition:** Derived and re-annotated from the UESB panoramic radiograph dataset (Silva et al., 2018), itself the source of the earlier m-TM dataset (Kayadibi et al.)
+- **Reason for Image Acquisition:** Support explainable AI detection of mandibular third molar (MTM) eruption status (erupted vs. impacted) to inform surgical decision-making
+- **Imaging Modality:** Panoramic radiographs (PR)
+- **Equipment Detail:** Not specified
+- **License Type:** Not specified
+- **Annotators:** One experienced oral and maxillofacial radiologist, using the MakeSense annotation tool
+- **Annotation Type:** Bounding boxes in YOLO format, two classes: e-MTM (erupted mandibular third molar) and i-MTM (impacted mandibular third molar)
+- **Files Formats:** Image files with YOLO-format label files, organized in train/images, train/labels, valid/images, valid/labels folders
+- **Images and Resolutions:**
+  - 973 expertly annotated panoramic radiographs
+  - Training set: 875 images (624 e-MTM, 980 i-MTM annotations)
+  - Remaining images allocated to the validation set
+- **Example of File Names:** Not specified
+- **Additional Notes:**
+  - Developed for the E-MTMYOLO architecture, which combines YOLOv5 with EigenCAM (an explainable AI technique)
+  - Must be cited alongside Kayadibi et al. (2025), J Supercomput, and the earlier mTMCNN study (Kayadibi et al., 2025, Int J Med Inform)
+
+### A Multi-Center Dental Panoramic Radiography Image Dataset for Impacted Teeth, Periodontitis, and Dental Caries
+
+- **Database:** GitHub
+- **Dataset URL:** [qinxin99/qinxini](https://github.com/qinxin99/qinxini)
+- **Year:** 2024
+- **Country:** China
+- **DOI:** 10.1007/s10278-024-00972-8
+- **Source of Data Acquisition:** Three hospital centers: (1) Stomatological Hospital of the General Hospital of Ningxia Medical University, Yinchuan; (2) People's Hospital of Yinchuan City, Ningxia; (3) a hospital in Shenzhen, Guangdong Province. Ethical approval granted by the Medical Ethics Review Committee of the General Hospital of Ningxia Medical University (KYLL-2021066)
+- **Reason for Image Acquisition:** Provide a multi-center, multi-task labeled benchmark to improve generalization of segmentation and classification models across imaging centers, addressing the single-center limitation of prior dental radiograph datasets
+- **Imaging Modality:** Panoramic radiographs
+- **Equipment Detail:** Instrumentarium Dental OP200D, resolution 2976×1536 px (Center 1); Veraviewepocs and ORTHOPHOS XG, resolutions 2893×1480 and 2440×1280 px (Center 2); Sirona X-ray machine, resolution 2440×1292 px (Center 3)
+- **License Type:** Not specified; dataset available on request via the GitHub repository, stated for research purposes
+- **Annotators:** Two dentists (one university professor with 25 years of clinical experience, one associate professor with 18 years) performed initial manual annotation using ITK-SNAP; two further associate professors (15 years of experience each) reviewed and resolved disagreements
+- **Annotation Type:** Manual closed-curve contour outlining of impacted-tooth boundaries, caries-affected areas, and bone-resorption regions in periodontitis cases; images converted from DICOM to NIFTI for annotation
+- **Files Formats:** DICOM converted to NIFTI
+- **Images and Resolutions:**
+  - Total: 6,580 panoramic radiographs across three centers
+  - Center 1: 4,940 images (5,557 in the disease-labeled breakdown before final grouping)
+  - Center 2: 716 images
+  - Center 3: 880 images
+  - Disease distribution: 2,567 impacted-teeth images, 2,736 periodontitis images, 1,277 dental-caries images
+- **Example of File Names:** Not specified
+- **Additional Notes:**
+  - Patients under 18 years of age were excluded, along with images with excessive noise, blurring, or severe distortion
+  - Periodontitis defined as at least three consecutive permanent teeth in one arch showing periodontal lesions, or loss of adjacent attachment in at least two permanent teeth beyond incisors and first molars
+  - Benchmarked with UNet, TransUNet, TA-Net, CE-Net, and DS-TransUNet for segmentation; AlexNet, VGG, GoogLeNet, and ResNet (with and without CBAM) for classification
+  - Data available on request via the GitHub repository; see the paper's Table 2 for a detailed per-center breakdown  
