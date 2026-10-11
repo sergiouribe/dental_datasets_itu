@@ -49,6 +49,7 @@ This repository serves as a centralized database of datasets for artificial inte
 | Dataset for Automating Dental Condition Detection on Panoramic Radiographs | Zenodo | [Zenodo record](https://zenodo.org/records/15487430) | 2025 | Romania | 10.5281/zenodo.15487430 (dataset); 10.3390/diagnostics14202336 (Mureșanu et al. 2024); 10.1016/j.mex.2025.103696 (Eftimie et al. 2025) | Department of Maxillofacial Surgery and Radiology, Iuliu Hațieganu University of Medicine and Pharmacy, Cluj-Napoca, Romania; retrospectively collected April 2021-December 2023, plus an external validation set from other Cluj-Napoca medical centers | Automated detection of dental conditions to support diagnosis, treatment planning, and risk stratification | Panoramic radiographs | Vatech PCH-2500 (Vatech, Hwaseong, Republic of Korea) | CC BY 4.0, subject to an additional database usage agreement restricting use to non-commercial research and education and prohibiting redistribution | Three calibrated researchers using Makesense.ai v1.11.0; inter-observer agreement ICC = 0.91 | Bounding boxes (YOLO format) across 14 classes: implant, prosthetic restoration, obturation, endodontic treatment, carious lesion, bone resorption, impacted tooth, apical periodontitis, root fragment, furcation lesion, apical surgery, root resorption, orthodontic device, surgical device | JPEG (.jpg) | 1,628 panoramic images (training set), plus a separate external validation set of 180 radiographs | Not specified |
 | Expert Annotated Mandibular Third Molar (ExAn-MTM) Dataset | Mendeley | [ExAn-MTM Dataset](https://data.mendeley.com/datasets/t8k59p35p6/1) | 2025 | Türkiye | 10.1007/s11227-025-07775-w | Derived and re-annotated from the UESB panoramic radiograph dataset (Silva et al., 2018) | Detection and explainable AI classification of mandibular third molar eruption status to support surgical decision-making | Panoramic radiographs | Not specified | Not specified | One experienced oral and maxillofacial radiologist using the MakeSense annotation tool | Bounding boxes (YOLO format), 2 classes: e-MTM (erupted) and i-MTM (impacted) | Image files with YOLO-format label files; organized into train/valid folders | 973 panoramic radiographs; training set 875 images (624 e-MTM, 980 i-MTM annotations) | Not specified |
 | A Multi-Center Dental Panoramic Radiography Image Dataset for Impacted Teeth, Periodontitis, and Dental Caries | GitHub | [qinxin99/qinxini](https://github.com/qinxin99/qinxini) | 2024 | China | 10.1007/s10278-024-00972-8 | Three hospitals: Stomatological Hospital of the General Hospital of Ningxia Medical University (Yinchuan), People's Hospital of Yinchuan City (Ningxia), and a hospital in Shenzhen, Guangdong Province; ethical approval KYLL-2021066 | Multi-center benchmarking of segmentation and classification models for impacted teeth, periodontitis, and dental caries to improve cross-center generalization | Panoramic radiographs | Instrumentarium Dental OP200D (Center 1); Veraviewepocs and ORTHOPHOS XG (Center 2); Sirona X-ray machine (Center 3) | Available on request through GitHub; no standard license specified, stated for research use | Two dentists (25 and 18 years of clinical experience) performed initial annotation; two additional associate professors (15 years' experience each) reviewed and resolved disagreements | Manual contour outlining in ITK-SNAP, converted from DICOM to NIFTI; labels for impacted teeth, caries lesions, and periodontal bone-loss areas | DICOM converted to NIFTI | 6,580 total images across 3 centers (4,940 + 716 + 880 core sets after exclusions: 5,557 + 734 + 126 + 163 = 6,580 in final grouping); 2,567 impacted-teeth images, 2,736 periodontitis images, 1,277 caries images; resolutions 2976×1536, 2893×1480, 2440×1280, and 2440×1292 px depending on center | Not specified |
+| COLLECT: Counterfactual Oral Lesion Library for Explainable Concept Testing | Borealis | [COLLECT](https://doi.org/10.5683/SP3/KXYCNY) | 2026 | Canada | 10.5683/SP3/KXYCNY, 10.1177/00220345261466240 | Routine dental examinations; clinical intra-oral images collected by certified oral pathologists | AI model robustness, interpretability, explainable concept testing, and diagnostic reliability in oral lesion classification | Intraoral clinical photography | Digital cameras under standard clinic lighting | CC BY-NC-ND 4.0 | Certified oral pathologists and oral health experts | Expert-validated lesion labels and structured counterfactual transformations | Image files | 600 images total: 40 baseline images × 5 versions each; resolution not specified | Not specified |
 
 
 ## LIST
@@ -1047,4 +1048,34 @@ This repository serves as a centralized database of datasets for artificial inte
   - Patients under 18 years of age were excluded, along with images with excessive noise, blurring, or severe distortion
   - Periodontitis defined as at least three consecutive permanent teeth in one arch showing periodontal lesions, or loss of adjacent attachment in at least two permanent teeth beyond incisors and first molars
   - Benchmarked with UNet, TransUNet, TA-Net, CE-Net, and DS-TransUNet for segmentation; AlexNet, VGG, GoogLeNet, and ResNet (with and without CBAM) for classification
-  - Data available on request via the GitHub repository; see the paper's Table 2 for a detailed per-center breakdown  
+  - Data available on request via the GitHub repository; see the paper's Table 2 for a detailed per-center breakdown
+ 
+
+### **COLLECT: Counterfactual Oral Lesion Library for Explainable Concept Testing**
+
+- **Database:** Borealis (McGill University Dataverse)  
+- **Dataset URL:** https://doi.org/10.5683/SP3/KXYCNY  
+- **Year:** 2026  
+- **Country:** Canada  
+- **DOI:** 10.5683/SP3/KXYCNY (dataset); 10.1177/00220345261466240 (paper)  
+- **Source of Data Acquisition:** Clinical intra-oral images collected by certified oral pathologists during routine dental examinations  
+- **Reason for Image Acquisition:** AI model robustness, interpretability, explainable concept testing, and diagnostic reliability in oral lesion classification  
+- **Imaging Modality:** Intraoral clinical photography  
+- **Equipment Detail:** Digital cameras under standard clinic lighting  
+- **License Type:** CC BY-NC-ND 4.0  
+- **Annotators:** Certified oral pathologists and oral health experts  
+- **Annotation Type:** Expert-validated lesion labels with structured counterfactual transformations (size, color, opacity)  
+- **Files Formats:** Image files (ZIP archive); PDF metadata  
+- **Images and Resolutions:**  
+  - 600 images total (40 baseline images × 5 versions each: original + 4 counterfactuals)  
+  - 10 baseline images per lesion category  
+  - Resolution not specified  
+- **Example of File Names:** Not specified (archive: `COLLECT_Counterfactuals-Images.zip`)  
+- **Additional Notes:**  
+  - Lesion categories: Aphthous Ulcer, Geographic Tongue (GT), Hairy Tongue (HT), Oral Squamous Cell Carcinoma (OSCC)  
+  - Size modifications: Aphthous ulcers increased in 25% steps; GT/HT/OSCC reduced in 10% steps  
+  - Color modifications: Progressive red saturation, whiteness, or dark brown tint to mimic clinically similar lesions  
+  - Opacity modifications: Decreased by 25% per stage until lesion fully faded and replaced with healthy-appearing mucosa  
+  - Ethical approval: McGill University IRB #[A07-M40-21B, 24-11-096]  
+  - GitHub: https://github.com/MadathilSA/COLLECT (predictions and figure reproduction notebook)  
+  - Associated publication: Tavakoli Tafti et al., *J Dent Res*, 2026
