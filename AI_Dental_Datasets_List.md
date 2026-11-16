@@ -50,6 +50,7 @@ This repository serves as a centralized database of datasets for artificial inte
 | Expert Annotated Mandibular Third Molar (ExAn-MTM) Dataset | Mendeley | [ExAn-MTM Dataset](https://data.mendeley.com/datasets/t8k59p35p6/1) | 2025 | Türkiye | 10.1007/s11227-025-07775-w | Derived and re-annotated from the UESB panoramic radiograph dataset (Silva et al., 2018) | Detection and explainable AI classification of mandibular third molar eruption status to support surgical decision-making | Panoramic radiographs | Not specified | Not specified | One experienced oral and maxillofacial radiologist using the MakeSense annotation tool | Bounding boxes (YOLO format), 2 classes: e-MTM (erupted) and i-MTM (impacted) | Image files with YOLO-format label files; organized into train/valid folders | 973 panoramic radiographs; training set 875 images (624 e-MTM, 980 i-MTM annotations) | Not specified |
 | A Multi-Center Dental Panoramic Radiography Image Dataset for Impacted Teeth, Periodontitis, and Dental Caries | GitHub | [qinxin99/qinxini](https://github.com/qinxin99/qinxini) | 2024 | China | 10.1007/s10278-024-00972-8 | Three hospitals: Stomatological Hospital of the General Hospital of Ningxia Medical University (Yinchuan), People's Hospital of Yinchuan City (Ningxia), and a hospital in Shenzhen, Guangdong Province; ethical approval KYLL-2021066 | Multi-center benchmarking of segmentation and classification models for impacted teeth, periodontitis, and dental caries to improve cross-center generalization | Panoramic radiographs | Instrumentarium Dental OP200D (Center 1); Veraviewepocs and ORTHOPHOS XG (Center 2); Sirona X-ray machine (Center 3) | Available on request through GitHub; no standard license specified, stated for research use | Two dentists (25 and 18 years of clinical experience) performed initial annotation; two additional associate professors (15 years' experience each) reviewed and resolved disagreements | Manual contour outlining in ITK-SNAP, converted from DICOM to NIFTI; labels for impacted teeth, caries lesions, and periodontal bone-loss areas | DICOM converted to NIFTI | 6,580 total images across 3 centers (4,940 + 716 + 880 core sets after exclusions: 5,557 + 734 + 126 + 163 = 6,580 in final grouping); 2,567 impacted-teeth images, 2,736 periodontitis images, 1,277 caries images; resolutions 2976×1536, 2893×1480, 2440×1280, and 2440×1292 px depending on center | Not specified |
 | COLLECT: Counterfactual Oral Lesion Library for Explainable Concept Testing | Borealis | [COLLECT](https://doi.org/10.5683/SP3/KXYCNY) | 2026 | Canada | 10.5683/SP3/KXYCNY, 10.1177/00220345261466240 | Routine dental examinations; clinical intra-oral images collected by certified oral pathologists | AI model robustness, interpretability, explainable concept testing, and diagnostic reliability in oral lesion classification | Intraoral clinical photography | Digital cameras under standard clinic lighting | CC BY-NC-ND 4.0 | Certified oral pathologists and oral health experts | Expert-validated lesion labels and structured counterfactual transformations | Image files | 600 images total: 40 baseline images × 5 versions each; resolution not specified | Not specified |
+| GingivitisSeg | Zenodo / GitHub | [GingivitisSeg](https://github.com/zeynepozdemir/GingivitisSeg) | 2026 | Türkiye | 10.48550/arXiv.2611.15184 (paper); 10.5281/zenodo.21098897 (dataset) | Ankara University Faculty of Dentistry (432 clinical images) + public source (Duy et al., 529 images) | Gingivitis segmentation, computer-assisted periodontal assessment, AI benchmarking | Intraoral photograph | Smartphone cameras (clinical subset); secondary use of existing public photographs | Public (paper CC BY-NC-SA 4.0); dataset publicly released | 2 dental experts (one >10 years experience, one postgraduate resident); joint consensus review | Pixel-level (binary gingival inflammation masks) | Intraoral images + segmentation masks | 961 images; native width 416–7286 px, height 218–4863 px; mean ≈4346 × 2894; mean gingivitis area 3.51% | Not specified |
 
 
 ## LIST
@@ -1079,3 +1080,31 @@ This repository serves as a centralized database of datasets for artificial inte
   - Ethical approval: McGill University IRB #[A07-M40-21B, 24-11-096]  
   - GitHub: https://github.com/MadathilSA/COLLECT (predictions and figure reproduction notebook)  
   - Associated publication: Tavakoli Tafti et al., *J Dent Res*, 2026
+ 
+### **GingivitisSeg**
+- **Database:** Zenodo / GitHub
+- **Dataset URL:** https://github.com/zeynepozdemir/GingivitisSeg
+- **Year:** 2026
+- **Country:** Türkiye
+- **DOI:** 10.48550/arXiv.2611.15184 (paper); dataset DOI 10.5281/zenodo.21098897
+- **Source of Data Acquisition:** 432 intraoral photographs collected at Ankara University Faculty of Dentistry (Department of Periodontology, Feb 2022–Feb 2023) from patients with clinically evident gingival inflammation; supplemented with 529 images from the public Duy et al. (2024) gingivitis image captioning dataset, newly annotated for pixel-level masks
+- **Reason for Image Acquisition:** Development and reproducible benchmarking of semantic segmentation models for gingival inflammation
+- **Imaging Modality:** Intraoral photographs
+- **Equipment Detail:** Smartphone cameras under clinical conditions (original clinical subset); details of the secondary public-source images reported in Duy et al.
+- **License Type:** Publicly available; associated preprint under CC BY-NC-SA 4.0
+- **Annotators:** Two dental experts (Department of Periodontology; one with >10 years experience, one postgraduate resident). Joint calibration on representative images, separate initial annotation of subsets, then joint review with consensus resolution of boundary disagreements. Intraobserver ICC = 0.80 on a 30-image re-annotation subset. Quantitative interobserver agreement not calculated (no independent dual annotation before consensus).
+- **Annotation Type:** Pixel-level binary segmentation masks of gingival inflammation (redness, edema, contour change); no severity grading; clinical indices (GI, MGI, BOP) not used to define masks
+- **Files Formats:** Intraoral images and corresponding segmentation masks (exported via Roboflow JSON then converted); predefined train/val/test splits
+- **Images and Resolutions:**
+  - 961 images total (432 clinical + 529 public-source)
+  - Native resolutions: width 416–7286 px, height 218–4863 px; mean approximately 4346 × 2894
+  - Mean image-wise gingivitis foreground proportion 3.51% (range ~0.12–19.83%)
+  - Source-stratified splits: 672 train (69.9%), 144 validation (15.0%), 145 test (15.1%)
+  - All images contain annotated gingivitis regions (positive-case segmentation benchmark only)
+- **Example of File Names:** Not specified in the paper
+- **Additional Notes:**
+  - Designed as a focused binary pixel-level gingivitis segmentation benchmark with predefined splits for reproducible comparison
+  - Severe foreground/background imbalance, low-contrast boundaries, illumination variation, and multi-source resolution heterogeneity are documented challenges
+  - Ethics: clinical subset approved by Ankara University Faculty of Dentistry Clinical Research Ethics Committee (Decision No. 05/02, 27 Feb 2023); written informed consent obtained
+  - Source code and documentation: https://github.com/zeynepozdemir/GingivitisSeg
+  - Preprint under review (Journal of Imaging Informatics in Medicine)
