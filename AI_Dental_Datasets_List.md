@@ -55,11 +55,10 @@ This repository serves as a centralized database of datasets for artificial inte
 | Dental Odontogenic Lesion CBCT and Histopathology Integrated Dataset (DOLCHID) | Figshare | [DOLCHID](https://doi.org/10.6084/m9.figshare.30156622) | 2025 dataset citation in authors’ repository; 2026 article | China | 10.6084/m9.figshare.30156622 (dataset); 10.1038/s41597-026-07112-7 (article) | School & Hospital of Stomatology, Wuhan University; surgically treated patients | Preoperative imaging and postoperative histopathological diagnosis; subsequent segmentation and classification research | CBCT; H&E histopathology | NewTom VG; Olympus light microscope | CC BY according to Figshare metadata; exact licence version not verified | 3 radiologists and 2 pathologists, each with >10 years of experience; cross-review and consensus | 3D CBCT lesion masks; histopathology ROI masks; four diagnostic classes | NIfTI (.nii.gz) volumes and masks; PNG histopathology images and masks | 262 paired cases: 44 dentigerous cysts, 54 radicular cysts, 92 odontogenic keratocysts, 72 ameloblastomas; reported CBCT voxel size 0.3 mm; histopathology pixel dimensions not reported | AME_1_CBCT_Image.nii.gz; AME_1_CBCT_Label.nii.gz; AME_1_HIST_Image.png; AME_1_HIST_Label.png |
 | COde: Casangels Oro-dental Dataset | Hugging Face | [COde](https://huggingface.co/datasets/zirak-ai/COde) | 2025 dataset citation; 2026 article | China | 10.57967/hf/6421 (dataset); 10.1038/s41597-026-07342-9 (article) | Suzhou Dental Doctor Outpatient Clinic; routine visits during 2018–2025 | Routine care; subsequent multimodal anomaly classification and report-generation research | Intraoral photographs; panoramic/periapical radiographs; CBCT-derived 2D images; clinical text | Canon D60 with 100 mm macro lens, as reported; Sirona Galileos CBCT; other X-ray models not specified | CC BY 4.0 | Licensed dental practitioners verified report-derived labels; number and experience not reported | Clinical-report-derived anomaly labels; Chinese/English narratives; diagnoses, treatment plans and follow-up notes | JPEG; CSV; JSON; ShareGPT-format JSON; ZIP distribution | 50,000 photographs and 8,056 radiographic images; 8,775 checkups from 4,800 patients; longest image dimension resized to 448 px | checkup_id followed by sequential image index; literal example not reported |
 | A multi-physician dental clinical dataset with structured EMR narratives and paired panoramic radiographs | Figshare | [Dental clinical dataset](https://doi.org/10.6084/m9.figshare.32219928) | 2026 article; initial repository release date not verified | China | 10.6084/m9.figshare.32219928 (dataset); 10.1038/s41597-026-08544-x (article) | Department of Stomatology, First Affiliated Hospital of Shihezi University; adult outpatient records, 2022–2025 | Routine outpatient care; subsequent research linking narratives, diagnoses, treatment decisions and imaging | Panoramic radiographs; structured EMR narratives | Not specified in accessible article webpage | CC BY 4.0 verified for Figshare v2; article-associated v3 licence not independently inspected | 5 physician authors; 20 double-transcription staff; 3 dental quality raters; 2 bilingual dental reviewers | 17 structured fields; category-level ICD-10 codes; synchronized Chinese/English narratives | Main dataset file extensions not verified; archive not inspected | 463 adult cases; 443 paired panoramic radiographs; pixel dimensions not verified | Not verified; individual filenames unavailable in retrieved sources |
-| CODE: Comprehensive Oral Mucosa Database with Explanations | Repository not identified in supplied abstract | Dataset URL not provided in supplied record | 2026 | India | 10.1016/j.dib.2026.113270 (article) | ICMR-funded SMITA project; standardized oral health screening across Tamil Nadu | Oral mucosal feature learning, anomaly detection, segmentation, and AI-assisted screening research | Smartphone intraoral photographs | Smartphone models not specified in supplied abstract | Not specified in supplied abstract; public availability reported | Expert reviewers; number and experience not specified in supplied abstract | Expert-reviewed polygons using VGG Image Annotator; linked demographic and clinical metadata | JPEG images; JSON annotations; structured metadata files | 5,566 included images from 704 participants: 5,386 normative and 180 abnormal; pixel dimensions not specified in supplied abstract | Not specified in supplied abstract |
-| Experimentally paired high- and low-resolution confocal fluorescence microscopy dataset for deep-learning super-resolution imaging of tooth dentin porosity | Repository not identified in supplied abstract | Dataset URL not provided in supplied record | 2026 | Acquisition country not established from supplied abstract | 10.1016/j.dib.2026.112666 (article) | Fluorescently stained tooth slice; six imaged regions | Paired and unpaired deep-learning super-resolution of dentin porosity | Confocal laser scanning fluorescence microscopy | Microscope manufacturer and model not specified in supplied abstract | Not specified in supplied abstract | Annotation personnel not specified in supplied abstract | Registered low-/high-resolution image pairs; patches classified into three porosity categories | File extensions not specified in supplied abstract | Six regions, each with 18 slices; high-resolution pixel size 100 × 100 nm; lower-resolution pixel sizes 200 × 200, 400 × 400, and 800 × 800 nm; final patch count not specified | Not specified in supplied abstract |
-| DentFilm v1.0: An expert-annotated clinical image dataset of complete denture biofilm | Zenodo | Record URL not provided in supplied abstract | 2026 | Acquisition country not established from supplied abstract | 10.1016/j.dib.2026.113318 (article) | 30 edentulous participants wearing maxillary conventional acrylic resin complete dentures | Automated denture biofilm assessment, segmentation, classification, and AI benchmarking | Clinical photographs of complete dentures | Controlled photographic acquisition; camera model not specified in supplied abstract | Not specified in supplied abstract; public availability through Zenodo reported | Expert annotators; number and experience not specified in supplied abstract | Expert-generated pixel-level biofilm segmentation masks; participant, stage, and view metadata | Image and mask extensions not specified in supplied abstract | 630 photographs and 90 segmentation masks, totaling 720 files; 30 participants; seven views and three hygiene stages; pixel dimensions not specified | Not specified in supplied abstract |
-| A dataset of preclinical tooth preparation images | Repository not identified in supplied abstract | Dataset URL not provided in supplied record | 2026 | Acquisition country not established from supplied abstract | 10.1016/j.dib.2026.112900 (article) | Multi-view photographs of artificial-tooth crown preparations | Automated assessment of preclinical tooth preparations and dental education research | Photographs of prepared artificial teeth | Not specified in supplied abstract | Not specified in supplied abstract | Specialist assessors; number and experience not established from supplied screening information | Expert pass/fail labels, ordinal feedback, and scores from 0 to 5 | File extensions not established from supplied screening information | Image count and pixel dimensions not established from supplied screening information | Not established from supplied screening information |
-| AIRC-LABDEN: A multi-modal dataset for dental plaque diagnosis of patients with fixed labial orthodontic appliances | Repository not identified in supplied abstract | Dataset URL not provided in supplied record | 2026 | Acquisition country not established from supplied abstract | 10.1016/j.dib.2026.112833 (article) | 148 patients wearing fixed labial orthodontic appliances; intraoral photographs linked to anonymized clinical records | Deep-learning detection and quantification of dental plaque | Intraoral photographs; demographic and treatment-related clinical records | Professional photographic equipment and standardized protocols; device models not specified in supplied abstract | Not specified in supplied abstract | Two dentists, each with at least five years of clinical experience | Tooth-level labels indicating plaque presence; linked clinical metadata | Image, annotation, and clinical-record extensions not specified in supplied abstract | 10,450 high-resolution intraoral images from 148 patients; pixel dimensions not specified in supplied abstract | Not specified in supplied abstract |
+| CODE: Comprehensive Oral Mucosa Database with Explanations | Figshare | https://doi.org/10.6084/m9.figshare.30550889 | 2026 | India | 10.1016/j.dib.2026.113270 (article); 10.6084/m9.figshare.30550889 (dataset) | ICMR-funded SMITA project; outpatient and community screening in Tamil Nadu | Normative oral mucosal feature learning, anomaly detection, segmentation, and AI-assisted oral screening research | Smartphone intraoral photographs | OnePlus Nord CE4 Lite 5G; vivo Y33s; Xiaomi 11 | CC BY 4.0, explicitly reported for dataset version 5.0 | Two calibrated oral pathologists, approximately three years of experience each; disagreements resolved by consensus | VIA polygon annotations of anatomical structures, mucosal sub-sites, lesion boundaries, and regions of interest; linked participant metadata | JPG; JSON; XLSX | 5,566 images from 704 participants: 5,386 normal and 180 abnormal; variable pixel dimensions after cropping; annotated and unannotated versions are not independent images | SMITA03453_KSR_DT.jpg |
+| DentFilm v1.0: An expert-annotated clinical image dataset of complete denture biofilm | Zenodo | https://doi.org/10.5281/zenodo.22813487 | 2026 | Brazil | 10.1016/j.dib.2026.113318 (article); 10.5281/zenodo.22813487 (dataset) | School of Dentistry, Federal University of Alfenas; 30 maxillary complete-denture wearers | Biofilm segmentation and quantification from unstained complete-denture photographs | Clinical photographs of complete dentures | Canon EOS Rebel T7; Canon EF 100 mm f/2.8 Macro lens; flash-assisted acquisition | Dataset licence requires repository verification; article is CC BY 4.0 | One trained examiner using ibisPaintX | Binary pixel-level biofilm masks drawn on unstained photographs using corresponding disclosed photographs as visual references | JPG photographs; PNG masks; tabular metadata; XLSX demographic data; PDF/TXT documentation | Paper reports 630 photographs and 90 masks from 30 participants; native resolution 6000 × 4000; analysis preprocessing 240 × 160; conflicting statements about release of disclosed images require repository verification | Exact filenames not specified in the supplied paper |
+| A dataset of preclinical tooth preparation images | Mendeley Data | https://doi.org/10.17632/27kp5jg4c3.3 | 2026 | Jordan | 10.1016/j.dib.2026.112900 (article); 10.17632/27kp5jg4c3.3 (dataset) | Jordan University of Science and Technology; artificial-tooth crown preparations by 533 fourth-year dental students | Automated preclinical preparation assessment, educational feedback, classification, and quality-score prediction | Multi-view photographs of prepared artificial teeth | Canon EOS 250D/Rebel SL3; Sigma 105 mm f/2.8 DG Macro HSM OS lens; Canon Macro Ring Lite MR-14EX | Dataset licence requires repository verification; article is CC BY-NC 4.0 | One specialist prosthodontist; no inter-rater reliability testing | Tooth-type labels; five binary rubric criteria; aggregate score 0–5; derived pass/fail and ordinal feedback categories | JPG; XLSX; ZIP archives; Python stitching script | 1,283 preparations represented by 3,849 separate-view images at 400 × 400 and 1,283 composites at 1200 × 400; these are alternate representations, not independent samples | 6_C_L.jpg; Annotation.xlsx; Stitched Images.zip; Separate View Images.zip; stitching.py |
+| AIRC-LABDEN: A multi-modal dataset for dental plaque diagnosis of patients with fixed labial orthodontic appliances | Mendeley Data, two parts | https://doi.org/10.17632/g8yhdvgjy2.3 ; https://doi.org/10.17632/xjs4bfgzj5.3 | 2026 | Vietnam | 10.1016/j.dib.2026.112833 (article); 10.17632/g8yhdvgjy2.3 and 10.17632/xjs4bfgzj5.3 (dataset parts) | VNU University of Medicine and Pharmacy and 108 Military Central Hospital, Hanoi; 148 orthodontic patients | Plaque localization and multimodal plaque assessment in patients with fixed labial appliances | Intraoral photographs with anonymized clinical records | Canon RP; Canon RF 100 mm f/2.8 L Macro lens; Godox MF12 flash; Dantech KD1 diffuser | Dataset licence requires repository verification; article is CC BY-NC 4.0 | Two dentists with at least five years of experience; YOLOv8-assisted proposals followed by expert verification | Bounding boxes for gingival, incisal, mesial, and distal regions around brackets; plaque presence/absence and tooth identifiers; linked clinical metadata | TXT labels; DOCX clinical records; JSON mapping; CSV split file; image extension requires verification | 10,450 images reported from 148 patients; processed resolution 5536 × 4160; augmentation described, so original-image count requires verification | patientxxxx.docx; teeth_position_mapping.json; Data_splits.csv |
 
 
 ## LIST
@@ -1208,252 +1207,221 @@ This repository serves as a centralized database of datasets for artificial inte
   - https://springernature.figshare.com/articles/dataset/Dental_Odontogenic_Lesion_CBCT_and_Histopathology_Integrated_Dataset_for_Benchmarking_Deep_Learning_Algorithms/30156622
   - https://github.com/ZimoHZM/DOLCHID
 
-
-### COde: Casangels Oro-dental Dataset
-
-- **Database:** Hugging Face
-- **Dataset URL:** https://huggingface.co/datasets/zirak-ai/COde
-- **Year:** Dataset cited as 2025; associated article published on 30 April 2026.
-- **Country:** China
-- **Dataset DOI:** 10.57967/hf/6421
-- **Publication DOI:** 10.1038/s41597-026-07342-9
-- **Source of Data Acquisition:** Suzhou Dental Doctor Outpatient Clinic; routine visits during 2018–2025.
-- **Reason for Image Acquisition:** Routine dental care; subsequently curated for multimodal anomaly classification and diagnostic report generation.
-- **Imaging Modality:** Intraoral photographs; panoramic and periapical radiographs; CBCT-derived two-dimensional images; linked clinical text.
-- **Equipment Detail:**
-  - Intraoral photography: Canon D60 DSLR with a 100 mm macro lens, as reported by the authors; photographs acquired by assistant dentists.
-  - CBCT: Sirona Galileos, operated by certified radiology technicians.
-  - Periapical and panoramic radiographs: clinical dental X-ray units; manufacturers and models not specified in the article.
-- **License Type:** CC BY 4.0, explicitly identified on the Hugging Face dataset card.
-- **Access:** Public dataset card and repository. A mandatory access gate was not established from the retrieved page.
-- **Annotators:** Licensed dental practitioners verified automatically extracted disease labels against the original clinical reports. Their number and years of experience are not reported. Chaoan Liang is credited with contributing to annotation; this does not establish that he was the sole annotator.
-- **Annotation Type:**
-  - Report-derived oro-dental anomaly labels checked against clinical text.
-  - Linked diagnoses, treatment plans, and follow-up notes.
-  - Chinese narratives and corresponding English translations.
-  - Classification and full diagnostic report-generation benchmarks.
-- **Files Formats:** JPEG images; CSV visit records; JSON records; ShareGPT-format JSON; compressed ZIP distribution.
-- **Images and Resolutions:**
-  - 50,000 intraoral photographs.
-  - 8,056 radiographic images.
-  - 8,775 checkups from 4,800 patients.
-  - Patient ages: 10–90 years.
-  - Longest image dimension resized to 448 pixels while preserving aspect ratio.
-- **Example of File Names:** The article specifies `checkup_id` followed by a sequential image index but does not provide a literal filename in the accessible text. Images are stored in `Photographs` and `Radiographs` subfolders.
-- **Code and Preprocessing:** https://github.com/zirak-ai/COde
-- **Additional Notes:**
-  - Six classification categories: caries, gingivitis, malocclusion, pulpitis, tooth loss, and tooth structure loss.
-  - English translation used GPT-4o.
-  - Single-centre dataset containing repeated visits; patient-level separation between training and test sets should be verified before reuse.
-  - Label verification assessed consistency with clinical reports rather than independent image-based re-diagnosis.
-- **Associated Publication:** Lv et al. *A benchmark multimodal oro-dental dataset for large vision-language models*. Scientific Data. 2026. https://doi.org/10.1038/s41597-026-07342-9
-- **Sources:**
-  - https://huggingface.co/datasets/zirak-ai/COde
-  - https://www.nature.com/articles/s41597-026-07342-9
-
-
-### A Multi-Physician Dental Clinical Dataset with Structured EMR Narratives and Paired Panoramic Radiographs
-
-- **Database:** Figshare
-- **Dataset URL:** https://doi.org/10.6084/m9.figshare.32219928
-- **Article-Associated Version:** https://doi.org/10.6084/m9.figshare.32219928.v3
-- **Year:** Article published on 19 November 2026; exact initial repository release date not independently verified.
-- **Country:** China
-- **Dataset DOI:** 10.6084/m9.figshare.32219928
-- **Publication DOI:** 10.1038/s41597-026-08544-x
-- **Source of Data Acquisition:** Department of Stomatology, First Affiliated Hospital of Shihezi University; adult outpatient records documented during 2022–2025.
-- **Reason for Image Acquisition:** Routine outpatient diagnosis and care; subsequently curated for research linking clinical narratives, diagnoses, treatment decisions, and panoramic imaging.
-- **Imaging Modality:** Panoramic radiographs and structured electronic medical record (EMR) narratives.
-- **Equipment Detail:** Not specified in the accessible article webpage. Acquisition equipment
-
 ### CODE: Comprehensive Oral Mucosa Database with Explanations
 
-- **Database:** Repository not identified in the supplied abstract.
-- **Dataset URL:** Not provided in the supplied bibliographic record.
-- **Year:** 2026, according to the supplied article record; dataset release date not verified.
+- **Database:** Figshare.
+- **Dataset URL:** https://doi.org/10.6084/m9.figshare.30550889
+- **Year:** 2026 publication; dataset version 5.0 reported in the paper.
 - **Country:** India.
 - **Publication DOI:** 10.1016/j.dib.2026.113270
-- **Dataset DOI:** Not provided in the supplied abstract.
-- **Source of Data Acquisition:** Indian Council of Medical Research (ICMR)-funded SMITA project; standardized hub-and-spoke oral health screening across Tamil Nadu.
-- **Reason for Image Acquisition:** Oral health screening; dataset developed for oral mucosal feature learning, representation learning, anomaly detection, segmentation, and AI-assisted screening research.
-- **Imaging Modality:** Smartphone intraoral photographs.
-- **Equipment Detail:** Standardized smartphone imaging protocols; smartphone manufacturers and models not specified in the supplied abstract.
-- **License Type:** Not specified in the supplied abstract. Public availability is reported but has not been independently verified.
-- **Annotators:** Expert reviewers; number, qualifications, experience, and disagreement-resolution procedure not specified in the supplied abstract.
+- **Dataset DOI:** 10.6084/m9.figshare.30550889
+- **Source of Data Acquisition:** Outpatient and community-based oral health screening conducted at KSR Institute of Dental Science and Research, Tiruchengode, coordinated by Ragas Dental College and Hospital, Chennai, under the ICMR-funded SMITA project.
+- **Reason for Image Acquisition:** Oral screening and development of a normative intraoral image resource for representation learning, anomaly detection, segmentation, image quality assessment, and AI-assisted oral healthcare research.
+- **Imaging Modality:** Smartphone-acquired intraoral photographs.
+- **Equipment Detail:**
+  - OnePlus Nord CE4 Lite 5G.
+  - vivo Y33s.
+  - Xiaomi 11.
+  - Native camera applications with autofocus and default settings.
+  - Images cropped to remove extraoral regions while preserving intraoral content.
+- **License Type:** CC BY 4.0, explicitly identified for dataset version 5.0 in the paper. The article itself is published under CC BY-NC 4.0.
+- **Annotators:**
+  - Two calibrated oral pathologists, each with approximately three years of professional experience.
+  - A subset of 100 images was independently reviewed.
+  - Disagreements were resolved by consensus.
 - **Annotation Type:**
-  - Expert-reviewed polygon annotations created using VGG Image Annotator (VIA).
-  - Image categories describing normative and abnormal oral findings.
-  - Linked anonymized participant-level demographic and clinical metadata.
+  - Polygon annotations generated using VGG Image Annotator, version 3.0.13.
+  - Delineation of anatomical structures, mucosal sub-sites, lesion boundaries, and clinically relevant regions of interest.
+  - One participant-level JSON file containing annotations for that participant's images.
+  - Linked demographic, behavioural, and clinical metadata.
 - **Files Formats:**
-  - JPEG photographs, including annotated and unannotated versions.
+  - JPG photographs, including annotated and unannotated versions.
   - JSON polygon annotations.
-  - Structured metadata files; extensions not specified in the supplied abstract.
+  - XLSX participant metadata.
 - **Images and Resolutions:**
   - 5,632 images initially acquired from 704 participants.
   - 5,566 images retained after quality assessment.
-  - 5,386 normative images.
-  - 180 abnormal images, including variations from normal oral mucosa, oral potentially malignant disorders, and oral cancer.
-  - Pixel dimensions not specified in the supplied abstract.
-- **Example of File Names:** Not specified in the supplied abstract.
+  - 5,386 normal images.
+  - 180 abnormal images: 163 variations from normal oral mucosa, 10 oral potentially malignant disorders, and seven oral squamous cell carcinomas.
+  - Pixel dimensions vary with smartphone and cropping.
+  - The 128 × 128 resolution used for autoencoder validation is a preprocessing size, not the native dataset resolution.
+  - Annotated and unannotated copies should not be counted as independent images.
+- **Example of File Names:**
+  - `SMITA03453_KSR_DT.jpg` — dorsal tongue.
+  - `SMITA03453_KSR_RB.jpg` — right buccal mucosa.
+  - `SMITA03453_KSR_UA.jpg` — upper dental arch.
 - **Additional Notes:**
   - Distinct from the Casangels Oro-dental dataset, COde.
-  - Images cover predefined intraoral anatomical sites.
-  - Technical validation used an unsupervised convolutional autoencoder for representation learning and anomaly detection, rather than diagnostic performance evaluation.
-  - The predominance of normative images reflects the intended learning tasks.
-  - Repository access, licence, annotation coverage, and dataset release date require verification.
+  - Primarily a normative dataset, not a balanced disease-classification benchmark.
+  - The 180 abnormal images should not all be described as pathological lesions.
+  - The paper reports Cohen's kappa of 0.83; the categorical outcome used for this calculation should be clarified before interpreting it as annotation-boundary agreement.
+  - Technical validation demonstrates exploratory representation learning rather than established diagnostic accuracy.
 - **Associated Publication:** Parangimalai Diwakar et al. *CODE (comprehensive oral mucosa database with explanations): a smartphone-based normative intraoral image dataset for oral mucosal feature learning and ai applications*. Data in Brief. 2026;69:113270.
 - **Publication URL:** https://doi.org/10.1016/j.dib.2026.113270
-- **Verification Status:** Preliminary extraction from the supplied bibliographic record and abstract; publisher page and repository not independently verified.
-
-
-### Experimentally Paired High- and Low-Resolution Confocal Fluorescence Microscopy Dataset for Deep-Learning Super-Resolution Imaging of Tooth Dentin Porosity
-
-- **Database:** Repository not identified in the supplied abstract.
-- **Dataset URL:** Not provided in the supplied bibliographic record.
-- **Year:** 2026, according to the supplied article record; dataset release date not verified.
-- **Country:** Acquisition country not established from the supplied abstract.
-- **Publication DOI:** 10.1016/j.dib.2026.112666
-- **Dataset DOI:** Not provided in the supplied abstract.
-- **Source of Data Acquisition:** Confocal imaging of a fluorescently stained tooth slice; six regions imaged at several spatial resolutions.
-- **Reason for Image Acquisition:** Development and evaluation of paired or unpaired deep-learning super-resolution methods for imaging dentinal tubules and branch channels.
-- **Imaging Modality:** Confocal laser scanning fluorescence microscopy.
-- **Equipment Detail:** Microscope manufacturer and model not specified in the supplied abstract. The objective remained unchanged between acquisitions to support matching of image regions.
-- **License Type:** Not specified in the supplied abstract.
-- **Annotators:** Personnel, expertise, and classification procedure not specified in the supplied abstract.
-- **Annotation Type:**
-  - Registered low- and high-resolution image pairs.
-  - Image patches classified into three categories based on the type and scale of porosity.
-  - High-resolution images provide paired reconstruction targets.
-- **Files Formats:** File extensions not specified in the supplied abstract.
-- **Images and Resolutions:**
-  - Six imaged regions.
-  - Eighteen slices per region, covering a reported depth of 5.1 µm.
-  - High-resolution acquisition pixel size: 100 × 100 nm.
-  - Lower-resolution acquisition pixel sizes: 200 × 200 nm, 400 × 400 nm, and 800 × 800 nm.
-  - Reported theoretical microscope point-spread function: 216 nm.
-  - Final image-patch count and pixel dimensions not specified in the supplied abstract.
-- **Example of File Names:** Not specified in the supplied abstract.
-- **Additional Notes:**
-  - Ex vivo dental microscopy dataset rather than a clinical imaging cohort.
-  - Pixel size describes spatial sampling and should not be treated as equivalent to measured optical resolution.
-  - Images were registered before patch extraction.
-  - Derived patches should not be counted as independent teeth or patients.
-  - Eligibility depends on whether the catalogue includes experimental dental microscopy.
-  - Repository access, licence, patch classes, and specimen provenance require verification.
-- **Associated Publication:** Anderson L, Lee SG, Grandfield K, Rousseau D, Gourrier A. *Experimentally paired high- and low-resolution confocal fluorescence microscopy dataset for deep-learning super-resolution imaging of tooth dentin porosity*. Data in Brief. 2026;66:112666.
-- **Publication URL:** https://doi.org/10.1016/j.dib.2026.112666
-- **Verification Status:** Preliminary extraction from the supplied bibliographic record and abstract; publisher page and repository not independently verified.
+- **Verification Status:** Extracted from the supplied full text. Repository contents and current access conditions have not been independently checked.
 
 
 ### DentFilm v1.0: An Expert-Annotated Clinical Image Dataset of Complete Denture Biofilm
 
-- **Database:** Zenodo, as reported in the supplied abstract.
-- **Dataset URL:** Zenodo record URL not provided in the supplied abstract.
-- **Year:** 2026, according to the supplied article record; dataset release date not verified.
-- **Country:** Acquisition country not established from the supplied abstract.
+- **Database:** Zenodo.
+- **Dataset URL:** https://doi.org/10.5281/zenodo.22813487
+- **Year:** 2026 publication.
+- **Country:** Brazil.
 - **Publication DOI:** 10.1016/j.dib.2026.113318
-- **Dataset DOI:** Not provided in the supplied abstract.
-- **Source of Data Acquisition:** Thirty edentulous participants wearing maxillary conventional acrylic resin complete dentures.
-- **Reason for Image Acquisition:** Development and benchmarking of automated complete-denture biofilm assessment, including segmentation, classification, and explainable AI.
+- **Dataset DOI:** 10.5281/zenodo.22813487
+- **Source of Data Acquisition:** School of Dentistry, Federal University of Alfenas (UNIFAL-MG), Brazil; photographs of maxillary conventional acrylic resin complete dentures from 30 participants.
+- **Reason for Image Acquisition:** Development and evaluation of automated denture biofilm segmentation, quantification, and hygiene-assessment methods.
 - **Imaging Modality:** Clinical photographs of complete dentures.
-- **Equipment Detail:** Standardized photographs acquired under controlled conditions; camera manufacturer and model not specified in the supplied abstract.
-- **License Type:** Not specified in the supplied abstract. Public availability through Zenodo is reported but has not been independently verified.
-- **Annotators:** Expert annotators; number, qualifications, experience, and agreement procedures not specified in the supplied abstract.
+- **Equipment Detail:**
+  - Canon EOS Rebel T7.
+  - Canon EF 100 mm f/2.8 Macro lens.
+  - Flash-assisted acquisition.
+  - Shutter speed 1/160 s, aperture f/11, ISO 100, and autofocus.
+- **License Type:** Dataset licence requires verification on Zenodo. The article is published under CC BY 4.0.
+- **Annotators:** One trained examiner using ibisPaintX.
 - **Annotation Type:**
-  - Expert-generated pixel-level biofilm segmentation masks.
-  - Disclosed images used as visual references during annotation.
-  - Structured metadata recording participant identifier, acquisition stage, photographic view, and annotation files.
-- **Files Formats:** Photograph, mask, and metadata file extensions not specified in the supplied abstract.
+  - Manual binary pixel-level segmentation of biofilm.
+  - Masks drawn directly on unstained photographs while corresponding biofilm-disclosed photographs were displayed as visual references.
+  - White pixels represent biofilm; black pixels represent background.
+  - Images before and after disclosure were not precisely registered because of positioning differences.
+- **Files Formats:**
+  - JPG clinical photographs.
+  - PNG segmentation masks.
+  - Tabular image metadata.
+  - XLSX demographic information.
+  - PDF/TXT documentation.
 - **Images and Resolutions:**
-  - 630 standardized clinical photographs.
-  - 90 segmentation masks.
-  - 720 files in total; masks must not be counted as additional clinical photographs.
-  - Thirty participants.
-  - Pixel dimensions not specified in the supplied abstract.
+  - Paper reports 630 clinical photographs and 90 segmentation masks from 30 participants.
+  - Reported photographic design: 30 participants × three clinical stages × seven views.
+  - Ninety annotated images correspond to three selected views per participant.
+  - Native photographs: 6000 × 4000 pixels, 24-bit RGB.
+  - Images resized to 240 × 160 pixels for computational analysis.
+  - The 90 masks are annotation files, not additional clinical photographs.
 - **Acquisition Stages:**
   - Before biofilm disclosure.
-  - After application of 0.5% basic fuchsin.
+  - After disclosure with 0.5% basic fuchsin.
   - After biofilm removal.
-- **Photographic Views:**
-  - Frontal.
-  - Right lateral.
-  - Left lateral.
-  - Right oblique.
-  - Left oblique.
-  - Occlusal.
-  - Intaglio.
-- **Example of File Names:** Not specified in the supplied abstract.
+- **Photographic Views:** Frontal, right and left oblique, right and left lateral, maxillary occlusal, and intaglio surface.
+- **Example of File Names:** Exact image and mask filenames are not specified in the supplied paper.
 - **Additional Notes:**
-  - The abstract reports a standardized directory structure.
-  - The correspondence between the 630 photographs and 90 masks requires inspection.
-  - Training, validation, and test partitions should be checked for participant-level separation.
-  - Repository access, licence, annotation coverage, and dataset release date require verification.
+  - The paper contains conflicting statements about repository composition: its dataset count includes all three acquisition stages, but the annotation section and figure caption state that disclosed photographs were not released.
+  - Repository inspection is needed to establish which stages are downloadable and whether 630 is the released photograph count.
+  - Do not describe all 630 photographs as having segmentation masks; only 90 masks are reported.
+  - Manual annotation was performed by one examiner and represents an approximate visual reference standard.
+  - Dataset diversity is limited to one centre, one imaging system, 30 participants, and maxillary complete dentures.
 - **Associated Publication:** Rodrigues et al. *DentFilm v1.0: an expert-annotated clinical image dataset of complete denture biofilm*. Data in Brief. 2026;69:113318.
 - **Publication URL:** https://doi.org/10.1016/j.dib.2026.113318
-- **Verification Status:** Preliminary extraction from the supplied bibliographic record and abstract; publisher page and repository not independently verified.
+- **Verification Status:** Extracted from the supplied full text. Repository composition, dataset licence, and downloadable resolutions require verification.
 
 
 ### A Dataset of Preclinical Tooth Preparation Images
 
-- **Database:** Repository not established from the supplied screening information.
-- **Dataset URL:** Not established from the supplied screening information.
-- **Year:** 2026, according to the supplied article record; dataset release date not verified.
-- **Country:** Acquisition country not established from the supplied screening information.
+- **Database:** Mendeley Data.
+- **Dataset URL:** https://doi.org/10.17632/27kp5jg4c3.3
+- **Year:** 2026 publication.
+- **Country:** Jordan.
 - **Publication DOI:** 10.1016/j.dib.2026.112900
-- **Dataset DOI:** Not established from the supplied screening information.
-- **Source of Data Acquisition:** Multi-view photographs of artificial-tooth crown preparations in a preclinical dental setting.
-- **Reason for Image Acquisition:** Development and evaluation of automated tooth-preparation assessment methods for dental education.
-- **Imaging Modality:** Photographs of prepared artificial teeth.
-- **Equipment Detail:** Not established from the supplied screening information.
-- **License Type:** Not established from the supplied screening information.
-- **Annotators:** Specialist assessors; number, experience, calibration, and disagreement-resolution procedure require verification.
+- **Dataset DOI:** 10.17632/27kp5jg4c3.3
+- **Source of Data Acquisition:** Preclinical simulation laboratories at Jordan University of Science and Technology, Irbid. Fourth-year dental students performed full-coverage crown preparations on NISSIN artificial teeth mounted in typodont jaws.
+- **Reason for Image Acquisition:** Documentation and automated assessment of preclinical tooth preparations, including educational feedback and quality-score prediction.
+- **Imaging Modality:** Multi-view photographs of prepared artificial teeth.
+- **Equipment Detail:**
+  - Canon EOS 250D/Rebel SL3.
+  - Sigma 105 mm f/2.8 DG Macro HSM OS lens.
+  - Canon Macro Ring Lite MR-14EX.
+  - Shutter speed 1/125 s, aperture f/5.6, ISO 100, and autofocus.
+- **License Type:** Dataset licence requires repository verification. The article is published under CC BY-NC 4.0.
+- **Annotators:**
+  - One specialist prosthodontist provided the reference evaluations.
+  - No inter-rater reliability testing was performed.
 - **Annotation Type:**
-  - Expert pass/fail labels.
-  - Ordinal feedback scores.
-  - Scores ranging from 0 to 5.
-  - Exact scoring criteria and annotation units require verification.
-- **Files Formats:** Image and annotation file extensions not established from the supplied screening information.
-- **Images and Resolutions:** Image count, number of prepared teeth, number of views, and pixel dimensions require verification.
-- **Example of File Names:** Not established from the supplied screening information.
+  - Tooth-type labels: incisor, canine, premolar, and molar.
+  - Five binary assessment criteria: axial wall reduction, occlusal reduction, retention and resistance form, margin clarity and continuity, and undercut evaluation.
+  - Aggregate score from 0 to 5, calculated as the number of criteria met.
+  - Derived pass/fail outcome: pass at ≥3; fail at ≤2.
+  - Derived ordinal feedback: excellent, good, needs improvement, or redo required.
+- **Files Formats:**
+  - JPG separate-view and composite images.
+  - XLSX annotation workbook.
+  - ZIP image archives.
+  - Python image-stitching script.
+- **Images and Resolutions:**
+  - 1,283 tooth preparations contributed by 533 students.
+  - 37 incisors, 201 canines, 512 premolars, and 533 molars.
+  - 3,849 separate-view photographs at 400 × 400 pixels.
+  - 1,283 composite images at 1200 × 400 pixels.
+  - Three source views per preparation: facial, lingual, and occlusal.
+  - Separate views and composites are alternate representations of the same preparations, not independent samples.
+- **Example of File Names:**
+  - `6_C_L.jpg` — lingual view of canine sample 6.
+  - `Annotation.xlsx`.
+  - `Stitched Images.zip`.
+  - `Separate View Images.zip`.
+  - `stitching.py`.
 - **Additional Notes:**
-  - Preclinical dataset involving artificial teeth, rather than patient-derived clinical images.
-  - Eligibility depends on whether the catalogue includes dental education and simulated procedures.
-  - Multiple views of one preparation should be linked and kept within the same partition when evaluating generalization to unseen preparations.
-  - Publisher metadata, repository access, licence, sample counts, and scoring procedures require verification.
-- **Associated Publication:** *A dataset of preclinical tooth preparation images*. Data in Brief. 2026. Article DOI as supplied in the bibliographic screening record.
+  - Educational/simulated dataset; no patient-derived clinical images or patient variables.
+  - Suitable for a broad dental AI catalogue, but outside a strictly clinical patient-imaging scope.
+  - Evaluations reflect qualitative photographic judgment, not instrument-based measurements of preparation geometry.
+  - Tooth types and evaluation outcomes are imbalanced.
+  - All views and composites from a preparation should remain in the same evaluation partition.
+- **Associated Publication:** Fraiwan M, Al Fodeh R, Shamiyah D. *A dataset of preclinical tooth preparation images*. Data in Brief. 2026;66:112900.
 - **Publication URL:** https://doi.org/10.1016/j.dib.2026.112900
-- **Verification Status:** Preliminary screening record; publisher page, complete bibliographic details, and repository not independently verified.
+- **Verification Status:** Extracted from the supplied full text. Repository contents and dataset licence have not been independently checked.
 
 
 ### AIRC-LABDEN: A Multi-Modal Dataset for Dental Plaque Diagnosis of Patients with Fixed Labial Orthodontic Appliances
 
-- **Database:** Repository not identified in the supplied abstract.
-- **Dataset URL:** Not provided in the supplied bibliographic record.
-- **Year:** 2026, according to the supplied article record; dataset release date not verified.
-- **Country:** Acquisition country not established from the supplied abstract.
+- **Database:** Mendeley Data, distributed in two parts.
+- **Dataset URLs:**
+  - Part 1: https://doi.org/10.17632/g8yhdvgjy2.3
+  - Part 2: https://doi.org/10.17632/xjs4bfgzj5.3
+- **Year:** 2026 publication.
+- **Country:** Vietnam.
 - **Publication DOI:** 10.1016/j.dib.2026.112833
-- **Dataset DOI:** Not provided in the supplied abstract.
-- **Source of Data Acquisition:** Patients wearing fixed labial orthodontic appliances; intraoral photographs linked to anonymized clinical records.
-- **Reason for Image Acquisition:** Development of deep-learning methods for detection and quantification of dental plaque in orthodontic patients.
-- **Imaging Modality:** Intraoral photographs with demographic and treatment-related clinical records.
-- **Equipment Detail:** Professional photographic equipment and standardized acquisition protocols; manufacturers and models not specified in the supplied abstract.
-- **License Type:** Not specified in the supplied abstract.
-- **Annotators:** Two dentists, each with at least five years of clinical experience.
+- **Dataset DOIs:** 10.17632/g8yhdvgjy2.3; 10.17632/xjs4bfgzj5.3
+- **Source of Data Acquisition:** Faculty of Dentistry, VNU University of Medicine and Pharmacy, and 108 Military Central Hospital, Hanoi; 148 patients undergoing fixed labial orthodontic treatment.
+- **Reason for Image Acquisition:** Development of image-based and multimodal methods for plaque localization and assessment around orthodontic brackets.
+- **Imaging Modality:** Intraoral photographs linked to anonymized clinical records.
+- **Equipment Detail:**
+  - Canon RP mirrorless camera.
+  - Canon RF 100 mm f/2.8 L Macro lens.
+  - Godox MF12 macro flash.
+  - Dantech KD1 diffuser kit.
+- **License Type:** Dataset licence requires repository verification. The article is published under CC BY-NC 4.0.
+- **Annotators:**
+  - Two dentists with at least five years of clinical experience.
+  - Semi-automated YOLOv8 proposals followed by manual review and expert verification.
 - **Annotation Type:**
-  - Tooth-level labels indicating plaque presence.
-  - Linked anonymized demographic and treatment-related metadata.
-  - Bounding boxes, polygons, or pixel-level masks are not established by the supplied abstract.
-- **Files Formats:** Image, annotation, and clinical-record file extensions not specified in the supplied abstract.
+  - Bounding boxes for four regions around orthodontic brackets: gingival, incisal, mesial, and distal.
+  - Plaque presence/absence labels.
+  - Tooth identifiers linked to an FDI tooth-position mapping.
+  - Clinical metadata covering demographics, treatment duration, Sulcus Bleeding Index, and oral hygiene habits.
+- **Files Formats:**
+  - TXT annotation files.
+  - DOCX anonymized clinical records.
+  - JSON tooth-position mapping.
+  - CSV patient/image mapping and recommended splits.
+  - Image file extension requires repository verification.
 - **Images and Resolutions:**
-  - 10,450 high-resolution intraoral images.
-  - 148 patients.
-  - Pixel dimensions not specified in the supplied abstract.
-- **Example of File Names:** Not specified in the supplied abstract.
+  - 10,450 images reported from 148 patients.
+  - Nine standard intraoral views before and after plaque disclosure.
+  - Additional image-quality variations include blur, low light, and glare.
+  - The paper describes brightness changes, horizontal flipping, and ±15° rotation as augmentation.
+  - Processed images are reported at 5536 × 4160 pixels.
+  - The number of original photographs, distinct from augmented derivatives, requires verification.
+- **Example of File Names:**
+  - `patientxxxx.docx`.
+  - `teeth_position_mapping.json`.
+  - `Data_splits.csv`.
+  - Corresponding images and TXT labels share the same filename stem.
 - **Additional Notes:**
-  - Developed for multimodal plaque detection in patients with orthodontic brackets.
-  - Annotation format, label definitions, calibration, and disagreement-resolution procedures require verification.
-  - Multiple images per patient require assessment of patient-level separation between training, validation, and test sets.
-  - Repository access, licence, and dataset release date require verification.
-- **Associated Publication:** *AIRC-LABDEN: A multi-modal dataset for dental plaque diagnosis of patients with fixed labial orthodontic appliances*. Data in Brief. 2026. https://doi.org/10.1016/j.dib.2026.112833
+  - Multimodal dataset combining photographs with patient-level clinical information.
+  - Labels support region-based plaque localization; they should not be described as pixel-level segmentation masks.
+  - The paper calls the annotation format “five-column” but lists plaque status, four bounding-box values, and a tooth identifier. Inspect actual TXT files before specifying the schema.
+  - A CSV split file links images to patients and provides recommended train/validation/test assignments.
+  - Patient-level separation and grouping of augmented derivatives should be verified before benchmarking.
+- **Associated Publication:** Anh et al. *AIRC-LABDEN: A multi-modal dataset for dental plaque diagnosis of patients with fixed labial orthodontic appliances*. Data in Brief. 2026;66:112833.
 - **Publication URL:** https://doi.org/10.1016/j.dib.2026.112833
+- **Verification Status:** Extracted from the supplied full text. Repository contents, dataset licence, original-image count, and annotation schema require verification.
+
 - **Verification Status:** Preliminary extraction from the supplied bibliographic record and abstract; publisher page and repository not independently
