@@ -51,6 +51,10 @@ This repository serves as a centralized database of datasets for artificial inte
 | A Multi-Center Dental Panoramic Radiography Image Dataset for Impacted Teeth, Periodontitis, and Dental Caries | GitHub | [qinxin99/qinxini](https://github.com/qinxin99/qinxini) | 2024 | China | 10.1007/s10278-024-00972-8 | Three hospitals: Stomatological Hospital of the General Hospital of Ningxia Medical University (Yinchuan), People's Hospital of Yinchuan City (Ningxia), and a hospital in Shenzhen, Guangdong Province; ethical approval KYLL-2021066 | Multi-center benchmarking of segmentation and classification models for impacted teeth, periodontitis, and dental caries to improve cross-center generalization | Panoramic radiographs | Instrumentarium Dental OP200D (Center 1); Veraviewepocs and ORTHOPHOS XG (Center 2); Sirona X-ray machine (Center 3) | Available on request through GitHub; no standard license specified, stated for research use | Two dentists (25 and 18 years of clinical experience) performed initial annotation; two additional associate professors (15 years' experience each) reviewed and resolved disagreements | Manual contour outlining in ITK-SNAP, converted from DICOM to NIFTI; labels for impacted teeth, caries lesions, and periodontal bone-loss areas | DICOM converted to NIFTI | 6,580 total images across 3 centers (4,940 + 716 + 880 core sets after exclusions: 5,557 + 734 + 126 + 163 = 6,580 in final grouping); 2,567 impacted-teeth images, 2,736 periodontitis images, 1,277 caries images; resolutions 2976×1536, 2893×1480, 2440×1280, and 2440×1292 px depending on center | Not specified |
 | COLLECT: Counterfactual Oral Lesion Library for Explainable Concept Testing | Borealis | [COLLECT](https://doi.org/10.5683/SP3/KXYCNY) | 2026 | Canada | 10.5683/SP3/KXYCNY, 10.1177/00220345261466240 | Routine dental examinations; clinical intra-oral images collected by certified oral pathologists | AI model robustness, interpretability, explainable concept testing, and diagnostic reliability in oral lesion classification | Intraoral clinical photography | Digital cameras under standard clinic lighting | CC BY-NC-ND 4.0 | Certified oral pathologists and oral health experts | Expert-validated lesion labels and structured counterfactual transformations | Image files | 600 images total: 40 baseline images × 5 versions each; resolution not specified | Not specified |
 | GingivitisSeg | Zenodo / GitHub | [GingivitisSeg](https://github.com/zeynepozdemir/GingivitisSeg) | 2026 | Türkiye | 10.48550/arXiv.2611.15184 (paper); 10.5281/zenodo.21098897 (dataset) | Ankara University Faculty of Dentistry (432 clinical images) + public source (Duy et al., 529 images) | Gingivitis segmentation, computer-assisted periodontal assessment, AI benchmarking | Intraoral photograph | Smartphone cameras (clinical subset); secondary use of existing public photographs | Public (paper CC BY-NC-SA 4.0); dataset publicly released | 2 dental experts (one >10 years experience, one postgraduate resident); joint consensus review | Pixel-level (binary gingival inflammation masks) | Intraoral images + segmentation masks | 961 images; native width 416–7286 px, height 218–4863 px; mean ≈4346 × 2894; mean gingivitis area 3.51% | Not specified |
+| ToothPix: A multi-focus oral panoramic X-ray image dataset based on pixel-level annotations | Zenodo | [ToothPix](https://zenodo.org/records/18439233) | 2026 | China | 10.5281/zenodo.18439233 (dataset); 10.1038/s41597-026-07021-9 (article) | Changsha Stomatological Hospital; clinical images acquired July 2024–February 2025 | Routine dental imaging; subsequent AI segmentation and detection research | Panoramic radiographs | Manufacturer and model not reported | Restricted; application and signed Data Use Agreement required | 20 dental imaging specialists, each with ≥3 years of experience | LabelMe polygon annotations of individual teeth; RGB segmentation masks | BMP/PNG images; JSON annotations; RGB PNG masks | 8,655 radiographs from 8,655 patients; 1890 × 841 px; >30,186 individual-tooth annotations | 0001/0001.bmp; 0001/0001.png; 0001/0001.json |
+| Dental Odontogenic Lesion CBCT and Histopathology Integrated Dataset (DOLCHID) | Figshare | [DOLCHID](https://doi.org/10.6084/m9.figshare.30156622) | 2025 dataset citation in authors’ repository; 2026 article | China | 10.6084/m9.figshare.30156622 (dataset); 10.1038/s41597-026-07112-7 (article) | School & Hospital of Stomatology, Wuhan University; surgically treated patients | Preoperative imaging and postoperative histopathological diagnosis; subsequent segmentation and classification research | CBCT; H&E histopathology | NewTom VG; Olympus light microscope | CC BY according to Figshare metadata; exact licence version not verified | 3 radiologists and 2 pathologists, each with >10 years of experience; cross-review and consensus | 3D CBCT lesion masks; histopathology ROI masks; four diagnostic classes | NIfTI (.nii.gz) volumes and masks; PNG histopathology images and masks | 262 paired cases: 44 dentigerous cysts, 54 radicular cysts, 92 odontogenic keratocysts, 72 ameloblastomas; reported CBCT voxel size 0.3 mm; histopathology pixel dimensions not reported | AME_1_CBCT_Image.nii.gz; AME_1_CBCT_Label.nii.gz; AME_1_HIST_Image.png; AME_1_HIST_Label.png |
+| COde: Casangels Oro-dental Dataset | Hugging Face | [COde](https://huggingface.co/datasets/zirak-ai/COde) | 2025 dataset citation; 2026 article | China | 10.57967/hf/6421 (dataset); 10.1038/s41597-026-07342-9 (article) | Suzhou Dental Doctor Outpatient Clinic; routine visits during 2018–2025 | Routine care; subsequent multimodal anomaly classification and report-generation research | Intraoral photographs; panoramic/periapical radiographs; CBCT-derived 2D images; clinical text | Canon D60 with 100 mm macro lens, as reported; Sirona Galileos CBCT; other X-ray models not specified | CC BY 4.0 | Licensed dental practitioners verified report-derived labels; number and experience not reported | Clinical-report-derived anomaly labels; Chinese/English narratives; diagnoses, treatment plans and follow-up notes | JPEG; CSV; JSON; ShareGPT-format JSON; ZIP distribution | 50,000 photographs and 8,056 radiographic images; 8,775 checkups from 4,800 patients; longest image dimension resized to 448 px | checkup_id followed by sequential image index; literal example not reported |
+| A multi-physician dental clinical dataset with structured EMR narratives and paired panoramic radiographs | Figshare | [Dental clinical dataset](https://doi.org/10.6084/m9.figshare.32219928) | 2026 article; initial repository release date not verified | China | 10.6084/m9.figshare.32219928 (dataset); 10.1038/s41597-026-08544-x (article) | Department of Stomatology, First Affiliated Hospital of Shihezi University; adult outpatient records, 2022–2025 | Routine outpatient care; subsequent research linking narratives, diagnoses, treatment decisions and imaging | Panoramic radiographs; structured EMR narratives | Not specified in accessible article webpage | CC BY 4.0 verified for Figshare v2; article-associated v3 licence not independently inspected | 5 physician authors; 20 double-transcription staff; 3 dental quality raters; 2 bilingual dental reviewers | 17 structured fields; category-level ICD-10 codes; synchronized Chinese/English narratives | Main dataset file extensions not verified; archive not inspected | 463 adult cases; 443 paired panoramic radiographs; pixel dimensions not verified | Not verified; individual filenames unavailable in retrieved sources |
 
 
 ## LIST
@@ -1108,3 +1112,151 @@ This repository serves as a centralized database of datasets for artificial inte
   - Ethics: clinical subset approved by Ankara University Faculty of Dentistry Clinical Research Ethics Committee (Decision No. 05/02, 27 Feb 2023); written informed consent obtained
   - Source code and documentation: https://github.com/zeynepozdemir/GingivitisSeg
   - Preprint under review (Journal of Imaging Informatics in Medicine)
+
+ ### ToothPix: A multi-focus oral panoramic X-ray image dataset based on pixel-level annotations
+
+- **Database:** Zenodo
+- **Dataset URL:** https://zenodo.org/records/18439233
+- **Year:** Dataset published on 31 January 2026, version V1; associated article published on 17 March 2026.
+- **Country:** China
+- **Dataset DOI:** 10.5281/zenodo.18439233
+- **Publication DOI:** 10.1038/s41597-026-07021-9
+- **Source of Data Acquisition:** Changsha Stomatological Hospital; clinical panoramic radiographs acquired from July 2024 to February 2025.
+- **Reason for Image Acquisition:** Routine clinical dental imaging; subsequently curated for AI segmentation, detection, and computer-aided diagnosis.
+- **Imaging Modality:** Panoramic radiographs.
+- **Equipment Detail:** Manufacturer and model not reported in the accessible article or Zenodo description.
+- **License Type:** Restricted access. Application and signed Data Use Agreement required. Reuse is governed by the agreement; a standard Creative Commons dataset licence was not identified in the accessible Zenodo description.
+- **Annotators:** 20 dental imaging specialists, each with at least three years of oral radiology experience; trained and assigned non-overlapping subsets.
+- **Annotation Type:** Manual LabelMe polygon annotations of individual tooth contours; corresponding RGB segmentation masks. The Zenodo record describes more than 30,186 annotations of individual teeth.
+- **Files Formats:** BMP/PNG images; JSON annotations; RGB PNG masks. Original acquisition format: DICOM.
+- **Images and Resolutions:**
+  - 8,655 de-identified panoramic radiographs from 8,655 patients.
+  - Patient ages: 4–80 years.
+  - Resolution: 1890 × 841 pixels.
+  - More than 30,186 individual-tooth annotations.
+- **Example of File Names:**
+  - `0001/0001.bmp`
+  - `0001/0001.png`
+  - `0001/0001.json`
+- **Code:** https://github.com/JCCui/CGC
+- **Additional Notes:**
+  - `Data1` contains BMP images and annotations; `Data2` contains equivalent PNG images and annotations; `Mask` contains RGB PNG masks.
+  - BMP and PNG versions represent the same images and must not be counted as separate patients.
+  - Single-centre dataset with unequal class frequencies.
+  - Independent duplicate annotation of every image was not established.
+  - Ethical approval: Changsha Stomatological Hospital, reference `(069) of 2025`.
+- **Associated Publication:** Cui et al. *A multi-focus oral panoramic x-ray image dataset based on pixel-level annotations*. Scientific Data. 2026. https://doi.org/10.1038/s41597-026-07021-9
+- **Sources:**
+  - https://zenodo.org/records/18439233
+  - https://pmc.ncbi.nlm.nih.gov/articles/PMC13139533/
+
+
+### Dental Odontogenic Lesion CBCT and Histopathology Integrated Dataset (DOLCHID)
+
+- **Database:** Figshare; GitHub documentation and code.
+- **Dataset URL:** https://doi.org/10.6084/m9.figshare.30156622
+- **Year:** Article published on 27 March 2026. The authors’ repository cites the dataset as 2025; the initial repository release date was not independently verified.
+- **Country:** China
+- **Dataset DOI:** 10.6084/m9.figshare.30156622
+- **Publication DOI:** 10.1038/s41597-026-07112-7
+- **Source of Data Acquisition:** School & Hospital of Stomatology, Wuhan University; 262 surgically treated patients.
+- **Reason for Image Acquisition:** Clinical preoperative assessment and postoperative histopathological diagnosis; subsequently curated for lesion segmentation, classification, and multimodal learning.
+- **Imaging Modality:** Cone-beam computed tomography (CBCT) and haematoxylin and eosin (H&E) histopathology.
+- **Equipment Detail:**
+  - NewTom VG, QR Srl, Verona, Italy.
+  - Reported field of view: 23 × 17 cm.
+  - Reported voxel size: 0.3 mm.
+  - Olympus light microscope.
+- **License Type:** CC BY, as displayed in indexed Figshare dataset metadata. The exact licence version was not verified. The article’s separate CC BY-NC-ND 4.0 licence should not be substituted for the dataset licence.
+- **Annotators:** Three radiologists and two pathologists, each with more than ten years of experience; assigned subsets were cross-reviewed to consensus. Histological diagnoses were reviewed by two pathologists, with a third adjudicator when necessary.
+- **Annotation Type:**
+  - Three-dimensional CBCT lesion segmentation masks.
+  - Histopathology region-of-interest masks.
+  - Case-level labels for four odontogenic lesion categories.
+  - Segmentation performed using 3D Slicer.
+- **Files Formats:**
+  - Released CBCT volumes and segmentation masks: compressed NIfTI (`.nii.gz`).
+  - Released histopathology images and masks: PNG (`.png`).
+  - DICOM acquisition and intermediate NRRD exports are described in the Methods.
+- **Images and Resolutions:**
+  - 262 paired CBCT and histopathology cases.
+  - Dentigerous cysts: 44.
+  - Radicular cysts: 54.
+  - Odontogenic keratocysts: 92.
+  - Ameloblastomas: 72.
+  - Reported CBCT voxel size: 0.3 mm.
+  - Histopathology pixel dimensions are not specified in the accessible article text and were not independently measured from released files.
+- **Example of File Names:**
+  - `AME_1_CBCT_Image.nii.gz`
+  - `AME_1_CBCT_Label.nii.gz`
+  - `AME_1_HIST_Image.png`
+  - `AME_1_HIST_Label.png`
+- **Code and Documentation:** https://github.com/ZimoHZM/DOLCHID
+- **Additional Notes:**
+  - Four released folders: `CBCT_Image`, `CBCT_Label`, `HIST_Image`, and `HIST_Label`, each containing 262 files.
+  - The article contains inconsistent references to intermediate formats. Released formats above follow the Data Records section and explicit filename examples.
+  - Single-centre dataset with unequal class sizes.
+  - Ethical approval: `2020-B22`.
+- **Associated Publication:** Huang et al. *Dental Odontogenic Lesion CBCT and Histopathology Integrated Dataset for Benchmarking Deep Learning Algorithms*. Scientific Data. 2026. https://doi.org/10.1038/s41597-026-07112-7
+- **Sources:**
+  - https://pmc.ncbi.nlm.nih.gov/articles/PMC13187427/
+  - https://springernature.figshare.com/articles/dataset/Dental_Odontogenic_Lesion_CBCT_and_Histopathology_Integrated_Dataset_for_Benchmarking_Deep_Learning_Algorithms/30156622
+  - https://github.com/ZimoHZM/DOLCHID
+
+
+### COde: Casangels Oro-dental Dataset
+
+- **Database:** Hugging Face
+- **Dataset URL:** https://huggingface.co/datasets/zirak-ai/COde
+- **Year:** Dataset cited as 2025; associated article published on 30 April 2026.
+- **Country:** China
+- **Dataset DOI:** 10.57967/hf/6421
+- **Publication DOI:** 10.1038/s41597-026-07342-9
+- **Source of Data Acquisition:** Suzhou Dental Doctor Outpatient Clinic; routine visits during 2018–2025.
+- **Reason for Image Acquisition:** Routine dental care; subsequently curated for multimodal anomaly classification and diagnostic report generation.
+- **Imaging Modality:** Intraoral photographs; panoramic and periapical radiographs; CBCT-derived two-dimensional images; linked clinical text.
+- **Equipment Detail:**
+  - Intraoral photography: Canon D60 DSLR with a 100 mm macro lens, as reported by the authors; photographs acquired by assistant dentists.
+  - CBCT: Sirona Galileos, operated by certified radiology technicians.
+  - Periapical and panoramic radiographs: clinical dental X-ray units; manufacturers and models not specified in the article.
+- **License Type:** CC BY 4.0, explicitly identified on the Hugging Face dataset card.
+- **Access:** Public dataset card and repository. A mandatory access gate was not established from the retrieved page.
+- **Annotators:** Licensed dental practitioners verified automatically extracted disease labels against the original clinical reports. Their number and years of experience are not reported. Chaoan Liang is credited with contributing to annotation; this does not establish that he was the sole annotator.
+- **Annotation Type:**
+  - Report-derived oro-dental anomaly labels checked against clinical text.
+  - Linked diagnoses, treatment plans, and follow-up notes.
+  - Chinese narratives and corresponding English translations.
+  - Classification and full diagnostic report-generation benchmarks.
+- **Files Formats:** JPEG images; CSV visit records; JSON records; ShareGPT-format JSON; compressed ZIP distribution.
+- **Images and Resolutions:**
+  - 50,000 intraoral photographs.
+  - 8,056 radiographic images.
+  - 8,775 checkups from 4,800 patients.
+  - Patient ages: 10–90 years.
+  - Longest image dimension resized to 448 pixels while preserving aspect ratio.
+- **Example of File Names:** The article specifies `checkup_id` followed by a sequential image index but does not provide a literal filename in the accessible text. Images are stored in `Photographs` and `Radiographs` subfolders.
+- **Code and Preprocessing:** https://github.com/zirak-ai/COde
+- **Additional Notes:**
+  - Six classification categories: caries, gingivitis, malocclusion, pulpitis, tooth loss, and tooth structure loss.
+  - English translation used GPT-4o.
+  - Single-centre dataset containing repeated visits; patient-level separation between training and test sets should be verified before reuse.
+  - Label verification assessed consistency with clinical reports rather than independent image-based re-diagnosis.
+- **Associated Publication:** Lv et al. *A benchmark multimodal oro-dental dataset for large vision-language models*. Scientific Data. 2026. https://doi.org/10.1038/s41597-026-07342-9
+- **Sources:**
+  - https://huggingface.co/datasets/zirak-ai/COde
+  - https://www.nature.com/articles/s41597-026-07342-9
+
+
+### A Multi-Physician Dental Clinical Dataset with Structured EMR Narratives and Paired Panoramic Radiographs
+
+- **Database:** Figshare
+- **Dataset URL:** https://doi.org/10.6084/m9.figshare.32219928
+- **Article-Associated Version:** https://doi.org/10.6084/m9.figshare.32219928.v3
+- **Year:** Article published on 19 November 2026; exact initial repository release date not independently verified.
+- **Country:** China
+- **Dataset DOI:** 10.6084/m9.figshare.32219928
+- **Publication DOI:** 10.1038/s41597-026-08544-x
+- **Source of Data Acquisition:** Department of Stomatology, First Affiliated Hospital of Shihezi University; adult outpatient records documented during 2022–2025.
+- **Reason for Image Acquisition:** Routine outpatient diagnosis and care; subsequently curated for research linking clinical narratives, diagnoses, treatment decisions, and panoramic imaging.
+- **Imaging Modality:** Panoramic radiographs and structured electronic medical record (EMR) narratives.
+- **Equipment Detail:** Not specified in the accessible article webpage. Acquisition equipment
